@@ -2,9 +2,9 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: Contact.jsx
-   Version: I
+   Version: II
    Creation: 02/06/2023
-   Last modification: 03/06/2023
+   Last modification: 11/23/2025 (Jenny Spicer)
 */
 
 import { m, LazyMotion, domAnimation } from "framer-motion";
@@ -40,7 +40,7 @@ const Contact = () => {
         <SocialLinks />
         <div className="bg-grayscale-950 flex justify-center pb-4 text-primary-200">
           <span>
-            Made by <em>Sara Echeverría (bl33h)</em>
+            Beautiful template by <em>Sara Echeverría (bl33h)</em> and modified by <em>Jenny Spicer (Jenspi)</em>, 2025
           </span>
         </div>
       </div>

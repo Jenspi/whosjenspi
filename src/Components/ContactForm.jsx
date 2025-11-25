@@ -4,7 +4,7 @@
    FileName: ContactForm.jsx
    Version: I
    Creation: 02/06/2023
-   Last modification: 03/06/2023
+   Last modification: 11/24/2025 (Jenny Spicer)
 */
 
 import { useRef, useState } from "react";
@@ -19,16 +19,16 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "whoisbl33h",
-      "template1",
+      "whoisJenny",
+      "template_r4oad76",
       e.target,
-      "JjC_Nnt4rUsjIsRtz"
+      "dvA-xQrDnUDtFzJ0g"
     )
       .then(
         (result) => {
           document.getElementById("contact_form").reset();
           setIsSent(true);
-          alert('Thank you I will get back to you as soon as possible ! (:');
+          alert('Thank you for reaching out! I will get back to you as soon as possible ! ☺️💞');
         },
         (error) => {
           console.error(error);
