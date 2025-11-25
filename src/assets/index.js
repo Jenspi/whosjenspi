@@ -2,37 +2,44 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: index.js
-   Version: I
+   Version: II
    Creation: 02/06/2023
-   Last modification: 03/06/2023
+   Last modification: 11/24/2025 (Jenny Spicer)
 */
 
 // Logo
-import bl33hIcon from './logo/icon.png';
+import JennyIcon from './logo/j.png';
 
 // Technologies
-import htmlIcon from './tech/html.png';
-import cssIcon from './tech/css.png';
-import jsIcon from './tech/javascript.png';
-import reactIcon from './tech/reactjs.png';
-import awsIcon from './tech/aws.png';
 import javaIcon from './tech/java.png';
 import gitIcon from './tech/git.png';
 import githubIcon from './tech/github.png';
 import figmaIcon from './tech/figma.png';
-import psqlIcon from './tech/postgresql.png';
-import eslintIcon from './tech/eslint.png';
-import viteIcon from './tech/vite.svg';
 import pyIcon from './tech/py.png';
 import npmIcon from './tech/npm.png';
-import neoIcon from './tech/neo.png';
-import raspIcon from './tech/raspi.png';
 import close from './close.svg';
 import menu from './menu.svg';
+import plsqlIcon from './tech/plsql.png';
+import arduinoIcon from './tech/arduino.svg';
+import reactnativeIcon from './tech/reactnative.png';
+import unrealengineIcon from './tech/unrealengine.png';
+import githubcopilotIcon from './tech/githubcopilot.png';
+import gamemakerIcon from './tech/gamemaker.svg';
+import canvaIcon from './tech/canva.png';
+import unityIcon from './tech/unity.png';
+import blenderIcon from './tech/blender.png';
+import agileIcon from './tech/agile.png';
+import moddingIcon from './tech/modding.png';
+import csharpIcon from './tech/csharp.png';
+import cppIcon from './tech/cpp.png';
 
+// TODO:
 // Projects
-import pawsitivePrototype from './projects/pawsitive.jpeg';
-import memoryGame from './projects/memory.jpg';
+//import breathe from './projects/breathe.png';
+
+// TODO:
+// Awards
+import attImg from './awards/att.jpg';
 
 // Avatar
 import avatar from './avatar/avatar.png';
@@ -40,24 +47,26 @@ import avatar from './avatar/avatar.png';
 export {
   menu,
   close,
-  htmlIcon,
-  cssIcon,
-  jsIcon,
-  reactIcon,
-  awsIcon,
   javaIcon,
   gitIcon,
   githubIcon,
-  eslintIcon,
   figmaIcon,
-  psqlIcon,
   npmIcon,
   pyIcon,
-  viteIcon,
-  neoIcon,
-  raspIcon,
-  pawsitivePrototype,
-  memoryGame,
   avatar,
-  bl33hIcon,
+  JennyIcon,
+  plsqlIcon,
+  arduinoIcon,
+  reactnativeIcon,
+  unrealengineIcon,
+  githubcopilotIcon,
+  gamemakerIcon,
+  canvaIcon,
+  unityIcon,
+  blenderIcon,
+  agileIcon,
+  moddingIcon,
+  csharpIcon,
+  cppIcon,
+  attImg,
 };
