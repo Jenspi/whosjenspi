@@ -4,7 +4,7 @@
    FileName: constants.js
    Version: II
    Creation: 02/06/2023
-   Last modification: 11/23/2025 (Jenny Spicer)
+   Last modification: 11/24/2025 (Jenny Spicer)
 */
 
 import { library } from '@fortawesome/fontawesome-svg-core';
