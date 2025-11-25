@@ -2,15 +2,15 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: HeroText.jsx
-   Version: I
+   Version: II
    Creation: 02/06/2023
-   Last modification: 03/06/2023
+   Last modification: 11/23/2025 (Jenny Spicer)
 */
 
 import { m, LazyMotion, domAnimation } from "framer-motion";
 
 const HeroText = () => {
-  const name = "BL33H ?";
+  const name = "JENNY?";
 
   return (
     <div
@@ -30,7 +30,7 @@ const HeroText = () => {
             whileInView={{ x: 0 }}
             transition={{ duration: 0.6, type: "spring" }}
           >
-            WHO'S{" "}
+            WHO IS{" "}
           </m.span>
           <m.div
             initial={{ x: 100 }}
