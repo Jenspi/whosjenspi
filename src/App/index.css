@@ -2,9 +2,9 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: index.css
-   Version: I
+   Version: II
    Creation: 02/06/2023
-   Last modification: 02/06/2023
+   Last modification: 11/23/2025 (Jenny Spicer)
 */
 
 
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "SuperMario";
-  src: url(/Fonts/Mario/Brugty.ttf);
+  src: url(/Fonts/Mario/SuperMario256.ttf);
 }
 
 * {
