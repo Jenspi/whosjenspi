@@ -2,16 +2,16 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: NavBar.jsx
-   Version: I
+   Version: II
    Creation: 02/06/2023
-   Last modification: 02/06/2023
+   Last modification: 11/23/2025 (Jenny Spicer)
 */
 
 import React, {useState } from "react";
 import { Link } from "react-router-dom";
 import {styles} from '../../styles.js';
 import { navLinks } from "../../Constants/constants";
-import { bl33hIcon, menu, close } from "../../assets";
+import { JennyIcon, menu, close } from "../../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -33,7 +33,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={bl33hIcon} alt={bl33hIcon} className="w-18 h-9 object-contain" />
+          <img src={JennyIcon} alt={JennyIcon} className="w-18 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
           </p>
         </Link>
