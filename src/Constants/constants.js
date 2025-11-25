@@ -2,9 +2,9 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: constants.js
-   Version: I
+   Version: II
    Creation: 02/06/2023
-   Last modification: 18/12/2023
+   Last modification: 11/23/2025 (Jenny Spicer)
 */
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -20,50 +20,57 @@ import {
   faReact,
   faGithub,
   faLinkedin,
+  faItchIo,
 } from '@fortawesome/free-brands-svg-icons';
 
 import {
-  htmlIcon,
-  cssIcon,
-  jsIcon,
-  reactIcon,
-  awsIcon,
   javaIcon,
   gitIcon,
   githubIcon,
-  psqlIcon,
-  eslintIcon,
   pyIcon,
-  viteIcon,
   npmIcon,
-  raspIcon,
-  neoIcon,
   figmaIcon,
-  pawsitivePrototype,
-  memoryGame,
   avatar,
+  plsqlIcon,
+  arduinoIcon,
+  reactnativeIcon,
+  unrealengineIcon,
+  githubcopilotIcon,
+  gamemakerIcon,
+  canvaIcon,
+  unityIcon,
+  blenderIcon,
+  agileIcon,
+  moddingIcon,
+  csharpIcon,
+  cppIcon,
+  attImg
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
 
 const media = {
-  htmlIcon,
-  cssIcon,
-  jsIcon,
-  reactIcon,
-  awsIcon,
   javaIcon,
   gitIcon,
   githubIcon,
-  psqlIcon,
-  eslintIcon,
   pyIcon,
-  viteIcon,
   npmIcon,
-  raspIcon,
-  neoIcon,
   figmaIcon,
   avatar,
+  plsqlIcon,
+  arduinoIcon,
+  reactnativeIcon,
+  unrealengineIcon,
+  githubcopilotIcon,
+  gamemakerIcon,
+  canvaIcon,
+  unityIcon,
+  blenderIcon,
+  agileIcon,
+  moddingIcon,
+  csharpIcon,
+  cppIcon,
+  attImg
 };
 
 const icons = {
@@ -75,16 +82,17 @@ const icons = {
   faReact,
   faGithub,
   faLinkedin,
+  faItchIo,
   faEnvelope,
 };
 
 const introduction = {
   text: [
-    "Hello there, I'm so happy you are here! (:",
+    "Hey there, I'm happy you stopped by! 👋☺️",
 
-		"My name is Sara, I'm 22 and a senior computer science student based in Guatemala. I have a strong passion for the technologies related to QA and AI.",
-    "Outside of my regular activities, I'm a painting artist, football enthusiast, chess player, and a dog lover.",
-    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary experiences. Your visit to my portfolio is deeply appreciated!"
+		"My name is Jenny (Jennifer) Spicer, and I have a passion for software engineering & UI/UX. I currently work as a Junior Software Engineer at a VR peripheral company, working particularly with anything related to Unreal Engine. 💞",
+    "Outside of my career, I'm passionate about helping people, re-starting my fitness journey, in love with the outdoors, and learning watercolor. 🌱",
+    "I'm always looking to expand my circle and volunteer– please reach out if you have any volunteer opportunities or would like to connect! 💫"
   ],
 };
 
@@ -98,6 +106,14 @@ export const navLinks = [
     title: 'Projects',
   },
   {
+    id: 'research',
+    title: 'Research',
+  },
+  {
+    id: 'awards',
+    title: 'Awards',
+  },
+  {
     id: 'skills',
     title: 'Skills',
   },
@@ -107,70 +123,68 @@ export const navLinks = [
   },
 ];
 
+// TODO:
 const projects = [
+  /*{
+    name: '',
+    description: '',
+    image: '',
+    source_code_link: '',
+    demo_link: '',
+  },*/
+];
+
+// TODO:
+const research = [];
+
+// TODO: (in progress)
+const awards = [
+  /*{
+    name: '',
+    placement: '',
+    award: '',
+    description: '',
+    image: '',
+    date: '',
+    source_code_link: '',
+    demo_link: '',
+    media_link: '',
+  },*/
   {
-    name: "Arasartara's Gallery",
-    description: 'A memory game with an art theme implemented with React. Test your memory skills and enjoy beautiful artwork as you match pairs of cards in this engaging game.',
-    image: memoryGame,
-    source_code_link: 'https://github.com/bl33h/artMemoryGame',
-    demo_link: 'https://arasarmemory.netlify.app/',
+    name: '🌐 AT&T Hackathon',
+    placement: '🥇 1st',
+    award: '$6,000 USD',
+    description: 'Our team of three competed nationwide in this hackathon, creating a website for our proposed art app given the theme: create an engaging digital experience for AT&T\'s 5G and fiber expansion.',
+    image: attImg,
+    date: 'April 2023',
+    source_code_link: 'https://github.com/shakkalaa/Kayjen-Hacketeers?tab=readme-ov-file',
+    demo_link: 'https://shakkalaa.github.io/Kayjen-Hacketeers/',
+    media_link: 'https://life.att.jobs/college-students-empowher-hackathon/',
+  },
+  /*
+  {
+    name: 'InnovateUNO',
+    placement: '🥇 1st',
+    award: '$200 USD',
+    description: '',
+    image: '',
+    date: 'November 2023',
+    source_code_link: '',
+    demo_link: '',
+    media_link: '',
   },
   {
-    name: 'Connect 4',
-    description: 'This project implements Connect Four in Python and Pygame, featuring a GUI and gameplay modes for player vs. AI and AI vs. AI. The AI uses the MiniMax algorithm, with optional alpha-beta pruning for improved performance.',
-    image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjRkaWp6MDJ1cXNrZmMzaTZ2aXVhcWtndWJpNHg0djRpYWdtYjF3ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/p49LPwL9yAoZInx28N/giphy.gif",
-    source_code_link: 'https://github.com/bl33h/connectFour',
-    demo_link: 'https://youtu.be/CBceC2BXJyE',
+    name: 'StartupUNO',
+    placement: '🥇 1st',
+    award: '$11,500 USD',
+    description: 'November 2024',
+    image: '',
+    date: '',
+    source_code_link: '',
+    demo_link: '',
+    media_link: '',
   },
-  {
-    name: 'Pawsitive',
-    description: 'Explore a user-friendly Figma prototype for an adoption and sterilization awareness website. Experience the sleek design and contribute to a noble cause.',
-    image: pawsitivePrototype,
-    source_code_link: 'https://github.com/bl33h/pawsitive',
-    demo_link: 'https://www.figma.com/proto/zhK8DMa7uPyQIcHxkemIcx/Pawsitive?type=design&node-id=40-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=40%3A2',
-  },
-  {
-    name: 'Client-Server Chat',
-    description: 'This is a chat application that facilitates communication between multiple clients through a centralized server. The application is designed using socket programming and handles multiple client connections concurrently using threads.',
-    image: "https://i.pinimg.com/originals/0e/4a/c3/0e4ac37acbff81cd087aa19692a07a9d.gif",
-    source_code_link: 'https://github.com/bl33h/clientServerChat',
-    demo_link: 'https://youtu.be/Mk1BNqPz1n4',
-  },
-  {
-    name: 'Visit Our Lands',
-    description: 'It is a recommendation system built with React and Supabase. This system focuses on providing tourist recommendations for various locations in Guatemala.',
-    image: "https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/uvd82gspopw8orvryulc",
-    source_code_link: 'https://github.com/bl33h/visitOurLands',
-    demo_link: 'https://visitourlands.netlify.app/',
-  },
-  {
-    name: 'Exploring The Space',
-    description: 'The program uses OpenGL and C++ to render celestial bodies with dynamic realism. It includes a shader-based pipeline and a camera that follows a spaceship for added interactivity.',
-    image: "https://camo.githubusercontent.com/073b9a25a3791903af3b062e0ced825225ad3550a164fe639c2bc5863c76512f/68747470733a2f2f6d65646961342e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784d4773314e6d733459336c6a4e4752684e3270354f574a33625456304f484675616d77314d574a314e6d31344d4849786254567963535a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f76553246666b6d386e6744494e336d6d36572f67697068792e676966",
-    source_code_link: 'https://github.com/bl33h/exploringTheSpace',
-    demo_link: 'https://camo.githubusercontent.com/1f7fb7873058b029992d30b8601d2c36582f6bb399482c560d5560c2d02fc37e/68747470733a2f2f6d65646961342e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784d4773314e6d733459336c6a4e4752684e3270354f574a33625456304f484675616d77314d574a314e6d31344d4849786254567963535a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f76553246666b6d386e6744494e336d6d36572f67697068792e676966',
-  },
-  {
-    name: 'Disney Plus Replica',
-    description: 'A replica of the Disney+ principal page built using React and Vite. The Vitest and Storybook technologies were also implemented for testing.',
-    image: "https://camo.githubusercontent.com/4c4ca68f5129db681313c44d9fe568db8dc6792412df4093dcb133371ca1a0cb/68747470733a2f2f6c756d696572652d612e616b616d616968642e6e65742f76312f696d616765732f65735f686f7573652d6f662d6469736e65792d706c75735f6d6f625f6d5f35376437663836652e6a7065673f726567696f6e3d302c302c3830302c3630302677696474683d373638",
-    source_code_link: 'https://github.com/bl33h/disneyPlusReplica',
-    demo_link: 'https://disneyplusreplica.netlify.app',
-  },
-  {
-    name: 'Deep Dive Odyssey Raycasting',
-    description: 'The code represents a raycasting graphics application with a Finding Pirate Treasure Under the Sea theme. It creates a 3D perspective effect by simulating rays of light and their interactions with a map.',
-    image: "https://camo.githubusercontent.com/6f427dc9ed1d9f990ac1309c323449fc51322fc8c10990ddef9ad11f3e49350b/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784f4870736432527a5a575a6a616e4e366547513364473172616e64755a576b306457357262336f79596d527964584636646a413264535a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f634b4c57543837305a4a39587769706e57772f67697068792e676966",
-    source_code_link: 'https://github.com/bl33h/deepDiveOdysseyRaycasting',
-    demo_link: 'https://camo.githubusercontent.com/94f800b79d759c06717af7d816a16ccff75a0101c942ca9ad3c562d0dd2c9404/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784f4870736432527a5a575a6a616e4e366547513364473172616e64755a576b306457357262336f79596d527964584636646a413264535a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f634b4c57543837305a4a39587769706e57772f67697068792e676966',
-  },
-  {
-    name: 'Fibonacci & Factorial',
-    description: 'A project that includes two LISP programs: one for factorials and the other for Fibonacci sequences. They use recursion, prompt user input, and display results efficiently.',
-    image: "https://i.pinimg.com/originals/96/c3/9a/96c39a5cb89092760fe11f355a32f4a4.gif",
-    source_code_link: 'https://github.com/bl33h/fibonacciAndFactorial',
-    demo_link: 'https://camo.githubusercontent.com/59b3c9969f369559fbeb1ed6a53f159e0e83b1151b82552b5b2165c4e9686e89/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f312f31612f4669626f6e616363695f63616c6c5f747265655f352e676966',
-  }
+  */
 ];
 
 const memoji = {
@@ -179,53 +193,88 @@ const memoji = {
 
 const skills = [
   {
-    id: 'html',
-    title: 'HTML',
-    icon: htmlIcon,
+    id: 'cpp',
+    title: 'C++',
+    icon: cppIcon,
     description:
-      'I have a strong command of HTML for organizing web pages and generating meaningful content that can be accessed by all users.',
+      'I use C++ for Arduino development as well as Unreal Engine SDK development, focusing on encapsulation and abstraction.',
   },
   {
-    id: 'css',
-    title: 'CSS',
-    icon: cssIcon,
+    id: 'gamemodding',
+    title: 'Game Modding',
+    icon: moddingIcon,
     description:
-    'I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.',
+      'New to the game modding world, I am working on a mod for a VR game developed with Unreal Engine. Data injection with UE4SS and Lua has been so fun!',
   },
   {
-    id: 'javascript',
-    title: 'JavaScript',
-    icon: jsIcon,
+    id: 'csharp',
+    title: 'C#',
+    icon: csharpIcon,
     description:
-    'I have substantial experience in employing JavaScript to introduce interactivity and functionality into web pages, resulting in dynamic user interfaces.',
+      'I have used C# for all of my Unity 3D games, most notably BREATHE (psychological horror game with an embedded system) and Sorts (sorting game).',
   },
   {
-    id: 'react',
-    title: 'React',
-    icon: reactIcon,
+    id: 'agile',
+    title: 'Agile Methodology',
+    icon: agileIcon,
     description:
-      'I am well-versed in React, proficient in creating reusable components and managing application state using hooks and context.',
+      'I enjoy checking off boxes, so iterative development with sprints, frequent check-ins, and adaptive planning is my favorite way to work!',
+  },
+  {
+    id: 'blender',
+    title: 'Blender',
+    icon: blenderIcon,
+    description:
+      'I\'m a Blender newbie, having made only a few models as of November 2025. Hope you\'ll follow my progress!',
+  },
+  {
+    id: 'unity',
+    title: 'Unity 3D',
+    icon: unityIcon,
+    description:
+      'I have extensive experience with Unity for 3D game development, being able to make a game start to finish independently with different scenes, animations, scripts (C#), and full UI/UX. ',
+  },
+  {
+    id: 'canva',
+    title: 'Canva',
+    icon: canvaIcon,
+    description:
+      'I have experience creating designs and flyers for social media campaigns, events, and personal branding. I am \'Canva For Work\' certified!',
+  },
+  {
+    id: 'gamemakerstudio',
+    title: 'Game Maker Studio 2',
+    icon: gamemakerIcon,
+    description:
+      'I am skilled with Game Maker Studio 2 for 2D games. Working on games both independently and collaboratively in game jams, I have implemented object-oriented programming (OOP) principles in Game Maker Language (GML).',
+  },
+  {
+    id: 'githubcopilot',
+    title: 'GitHub Copilot',
+    icon: githubcopilotIcon,
+    description:
+      'I have recently started using GitHub Copilot to speed up the process of reading SDKs. It is especially helpful in languages I\'m unfamiliar with, and I can easily get answers for every tiny question.',
+  },
+  {
+    id: 'unrealengine',
+    title: 'Unreal Engine',
+    icon: unrealengineIcon,
+    description:
+      'I have experience with visual scripting with blueprints for VR game development. I also contribute and maintain to StrikerVR\'s Unreal Engine SDK (C++).',
+  },
+  {
+    id: 'reactnative',
+    title: 'React Native',
+    icon: reactnativeIcon,
+    description:
+      'I am well-versed in React Native for Android/iOS development, proficient in creating reusable components and managing application state using hooks and context (JavaScript & TypeScript).',
   },
   {
     id: 'java',
     title: 'Java',
     icon: javaIcon,
     description:
-      'I have extensive experience utilizing Java for object-oriented programming (OOP) and implementing data structures.',
-  },
-  {
-    id: 'aws',
-    title: 'Amazon Web Services',
-    icon: awsIcon,
-    description:
-      'I am certified in AWS and proficient in working with EC2 and RDS instances, leveraging the power of cloud computing for scalable and reliable infrastructure.',
-  },
-  {
-    id: 'figma',
-    title: 'Figma',
-    icon: figmaIcon,
-    description:
-    'In my Figma skills, I unleash creativity, designing captivating user interfaces and collaborating seamlessly with designers and developers.',
+      'Being my preferred and favorite programming language, I have extensive experience utilizing Java for object-oriented programming (OOP) and implementing data structures.',
   },
   {
     id: 'git',
@@ -239,56 +288,35 @@ const skills = [
     title: 'GitHub',
     icon: githubIcon,
     description:
-      'I am skilled in using GitHub for seamless project collaboration, code sharing, and issue tracking. Through GitHub, I efficiently create and manage repositories and effectively present my work to potential employers.',
+      'I am skilled in using GitHub for seamless project collaboration, code sharing, and issue tracking.',
   },
   {
-    id: 'psql',
-    title: 'Postgresql',
-    icon: psqlIcon,
+    id: 'plsql',
+    title: 'PL/SQL',
+    icon: plsqlIcon,
     description:
-      'I have a strong command of PostgreSQL, encompassing a wide range of skills such as database normalization, triggers, front-end connectivity, and data analysis using software like Power BI.',
+      'I have a strong command of PL/SQL, encompassing a wide range of skills such as database normalization, triggers, front-end connectivity, and data analysis using software like Power BI.',
   },
   {
-    id: 'vite',
-    title: 'Vite',
-    icon: viteIcon,
+    id: 'figma',
+    title: 'Figma',
+    icon: figmaIcon,
     description:
-      'I have gained considerable experience working with Vite for approximately six months, leveraging its capabilities to build React websites and seamlessly deploy them on platforms like Netlify.',
-  },
-  {
-    id: 'py',
-    title: 'Python',
-    icon: pyIcon,
-    description:
-      'With 3 years of Python experience, I am adept at coding functions and creating graphic interfaces using Tkinter.',
+    'Using Figma, I am able to make medium-fidelity and high-fidelity prototypes. This allows me to experiment with interactive UI/UX without code!',
   },
   {
     id: 'npm',
     title: 'npm',
     icon: npmIcon,
     description:
-      'When it comes to building web applications, I prefer using npm as my runtime environment over Yarn. I have expertise to develop powerful and scalable web applications.',
+      'When it comes to building native applications, I prefer using npm as my runtime environment over Yarn.',
   },
   {
-    id: 'neo',
-    title: 'Neo4j',
-    icon: neoIcon,
+    id: 'arduino',
+    title: 'Arduino',
+    icon: arduinoIcon,
     description:
-      'I am knowledgeable in Neo4j, the graph database management system. I have expertise in utilizing GraphOS to build robust recommendation systems, leveraging the strength of graph-based data modeling.',
-  },
-  {
-    id: 'raspi',
-    title: 'Raspberry Pi',
-    icon: raspIcon,
-    description:
-      'I have hands-on experience with Raspberry Pi, where I utilized a virtual Linux machine to execute programs written in assembly language. This allowed me to explore low-level computing and develop efficient code for the Raspberry Pi platform.',
-  },
-  {
-    id: 'eslint',
-    title: 'Eslint',
-    icon: eslintIcon,
-    description:
-      'I utilize ESLint to identify and resolve code issues, as well as standardize the structure of my projects. With ESLint, I ensure code quality and consistency throughout my development process.',
+      'I have hands-on experience with Arduino, where I implemented an embedded system breathing monitor into my Unity 3D pyschological horror game, BREATHE, written in C++.',
   },
 ];
 
@@ -305,4 +333,5 @@ export {
   skills,
   markerSvg,
   icons,
+  awards,
 };
