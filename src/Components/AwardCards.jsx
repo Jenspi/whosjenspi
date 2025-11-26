@@ -2,9 +2,9 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: AwardCards.jsx (ProjectCards.jsx modified)
-   Version: I
+   Version: II
    Creation: 02/06/2023
-   Last modification: 11/24/2024 (Jenny Spicer)
+   Last modification: 11/26/2024 (Jenny Spicer)
 */
 
 import { motion } from "framer-motion";
@@ -103,11 +103,6 @@ export const slideIn = (direction, type, delay, duration) => {
 
 const ProjectCard = ({
 	index,
-	// name,
-    // description,
-    // image,
-    // source_code_link,
-    // demo_link,
 	name,
     placement,
     award,
@@ -136,7 +131,7 @@ const ProjectCard = ({
                       alt={name}
                       className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
                   />
-                  <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+                  {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
                       <div
                           onClick={() => window.open(source_code_link, "_blank")}
                           className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
@@ -147,7 +142,7 @@ const ProjectCard = ({
                               className="w-full h-full object-contain"
                           />
                       </div>
-                  </div>
+                  </div> */}
               </div>
 
               <div className="mt-3">
@@ -162,10 +157,10 @@ const ProjectCard = ({
               <div className="mt-3 flex justify-center items-center">
                   <a
                       className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
-                      href={demo_link}
+                      href={media_link}
                       target="_blank"
                   >
-                      See the Demo
+                      Article
                   </a>
               </div>
           </motion.div>
