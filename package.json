@@ -9,11 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
+    "@emailjs/browser": "^3.12.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@lexical/react": "^0.38.2",
     "@motionone/utils": "^10.15.1",
     "@react-hook/window-size": "^3.1.1",
     "@types/react-dom": "^18.0.11",
@@ -25,6 +26,7 @@
     "font-awesome": "^4.7.0",
     "framer-motion": "^10.11.2",
     "gsap": "^3.11.5",
+    "lexical": "^0.38.2",
     "localforage": "^1.10.0",
     "lodash-move": "^1.1.1",
     "match-sorter": "^6.3.1",
