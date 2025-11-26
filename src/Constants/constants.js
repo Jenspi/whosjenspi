@@ -44,7 +44,9 @@ import {
   moddingIcon,
   csharpIcon,
   cppIcon,
-  attImg
+  attImg,
+  innovateunoImg,
+  startupunoImg,
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -70,7 +72,9 @@ const media = {
   moddingIcon,
   csharpIcon,
   cppIcon,
-  attImg
+  attImg,
+  innovateunoImg,
+  startupunoImg,
 };
 
 const icons = {
@@ -105,10 +109,10 @@ export const navLinks = [
     id: 'projects',
     title: 'Projects',
   },
-  {
-    id: 'research',
-    title: 'Research',
-  },
+  // {
+  //   id: 'research',
+  //   title: 'Research',
+  // },
   {
     id: 'awards',
     title: 'Awards',
@@ -125,6 +129,7 @@ export const navLinks = [
 
 // TODO:
 const projects = [
+  // Mobile apps, networking, 
   /*{
     name: '',
     description: '',
@@ -135,7 +140,18 @@ const projects = [
 ];
 
 // TODO:
-const research = [];
+const research = [
+  // BREATHE, ScholarUp, Camo Chameleon, Fitness App
+  /*{
+    name: '',
+    description: '',
+    image: '',
+    date: '',
+    source_code_link: '',
+    demo_link: '',
+    media_link: '',
+  },*/
+];
 
 // TODO: (in progress)
 const awards = [
@@ -151,40 +167,38 @@ const awards = [
     media_link: '',
   },*/
   {
+    name: '⚡️ StartupUNO',
+    placement: '🥇 1st: $10,000 USD + 🏆 Audience Favorite',
+    award: '$1,500 USD',
+    description: 'Our team of three competed against 36 other teams at the University of New Orleans, creating a business plan and prototype for our video game, Chamo Chameleon, which is aimed at helping children increase their emotional intelligence through gameplay.',
+    image: startupunoImg,
+    date: 'November 2024',
+    source_code_link: 'https://github.com/Jenspi/CamoChameleon',
+    demo_link: 'https://github.com/Jenspi/CamoChameleon/blob/main/Startup/StartupUNO-2024.pdf',
+    media_link: 'https://thebeachuno.org/startupuno/',
+  },
+  {
     name: '🌐 AT&T Hackathon',
     placement: '🥇 1st',
     award: '$6,000 USD',
-    description: 'Our team of three competed nationwide in this hackathon, creating a website for our proposed art app given the theme: create an engaging digital experience for AT&T\'s 5G and fiber expansion.',
+    description: 'Our team of three competed nationwide in AT&T\'s EmpowHer Hackathon, creating a website for our proposed art app, Dynamic Sketch, given the theme: create an engaging digital experience for AT&T\'s 5G and fiber expansion.',
     image: attImg,
     date: 'April 2023',
     source_code_link: 'https://github.com/shakkalaa/Kayjen-Hacketeers?tab=readme-ov-file',
     demo_link: 'https://shakkalaa.github.io/Kayjen-Hacketeers/',
     media_link: 'https://life.att.jobs/college-students-empowher-hackathon/',
   },
-  /*
   {
-    name: 'InnovateUNO',
+    name: '💡 InnovateUNO',
     placement: '🥇 1st',
     award: '$200 USD',
-    description: '',
-    image: '',
+    description: 'Our team of three researched and developed a mobile app, ScholarUp, that was presented at UNO\'s annual research symposium, InnovateUNO, along with 100 other students and faculty.',
+    image: innovateunoImg,
     date: 'November 2023',
-    source_code_link: '',
-    demo_link: '',
-    media_link: '',
+    source_code_link: 'https://github.com/Jenspi/ScholarUp/',
+    demo_link: 'https://github.com/Jenspi/ScholarUp/',
+    media_link: 'https://www.uno.edu/innovateuno/winners',
   },
-  {
-    name: 'StartupUNO',
-    placement: '🥇 1st',
-    award: '$11,500 USD',
-    description: 'November 2024',
-    image: '',
-    date: '',
-    source_code_link: '',
-    demo_link: '',
-    media_link: '',
-  },
-  */
 ];
 
 const memoji = {
