@@ -38,8 +38,13 @@ import cppIcon from './tech/cpp.png';
 //import breathe from './projects/breathe.png';
 
 // TODO:
+// Research
+//import camochameleon from './research/camochameleon.png';
+
 // Awards
 import attImg from './awards/att.jpg';
+import innovateunoImg from './awards/innovateuno.png';
+import startupunoImg from './awards/startupuno.png';
 
 // Avatar
 import avatar from './avatar/avatar.png';
@@ -69,4 +74,6 @@ export {
   csharpIcon,
   cppIcon,
   attImg,
+  innovateunoImg,
+  startupunoImg,
 };
