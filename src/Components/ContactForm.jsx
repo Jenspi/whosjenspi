@@ -21,7 +21,7 @@ const ContactForm = () => {
     emailjs.sendForm(
       "whoisJenny",
       "template_r4oad76",
-      e.target,
+      form.current,
       "dvA-xQrDnUDtFzJ0g"
     )
       .then(
