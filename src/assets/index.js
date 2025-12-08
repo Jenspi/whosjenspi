@@ -4,7 +4,7 @@
    FileName: index.js
    Version: II
    Creation: 02/06/2023
-   Last modification: 11/24/2025 (Jenny Spicer)
+   Last modification: 12/08/2025 (Jenny Spicer)
 */
 
 // Logo
@@ -33,9 +33,10 @@ import moddingIcon from './tech/modding.png';
 import csharpIcon from './tech/csharp.png';
 import cppIcon from './tech/cpp.png';
 
-// TODO:
+// TODO (IN PROGRESS):
 // Projects
-//import breathe from './projects/breathe.png';
+import tcpchatImg from './projects/tcpchat.png';
+import breatheImg from './projects/breathe.png';
 
 // TODO:
 // Research
@@ -45,6 +46,8 @@ import cppIcon from './tech/cpp.png';
 import attImg from './awards/att.jpg';
 import innovateunoImg from './awards/innovateuno.png';
 import startupunoImg from './awards/startupuno.png';
+
+// Blog / Game Journals
 
 // Avatar
 import avatar from './avatar/avatar.png';
@@ -76,4 +79,6 @@ export {
   attImg,
   innovateunoImg,
   startupunoImg,
+  tcpchatImg,
+  breatheImg,
 };
