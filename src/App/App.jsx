@@ -26,6 +26,7 @@ function App() {
       {/* TODO: <Research /> */}
       <Awards />
       <Skills />
+      {/* TODO: Blog / Game Journals */}
       <Contact />
     </>
   );
