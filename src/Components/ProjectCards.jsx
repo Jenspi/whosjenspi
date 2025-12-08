@@ -106,6 +106,7 @@ const ProjectCard = ({
   name,
   description,
   image,
+  stack,
   source_code_link,
   demo_link,
 }) => {
@@ -143,6 +144,7 @@ const ProjectCard = ({
 
               <div className="mt-3">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
+                  <h5 className="text-white font-bold text-1xl italic">{stack}</h5>
                   <p className="mt-2 text-secondary text-[14px] leading-snug">
                       {description}
                   </p>
