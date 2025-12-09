@@ -31,6 +31,7 @@ import {
   npmIcon,
   figmaIcon,
   avatar,
+  placeholderImg,
   plsqlIcon,
   arduinoIcon,
   reactnativeIcon,
@@ -49,6 +50,13 @@ import {
   startupunoImg,
   tcpchatImg,
   breatheImg,
+  research_camochameleonImg,
+  research_scholarupImg,
+  research_fitnessappImg,
+  research_breatheImg,
+  // gamejournal_ow2Img,
+  // documentationWorkshopImg,
+  // vrarhistoryImg,
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -61,6 +69,7 @@ const media = {
   npmIcon,
   figmaIcon,
   avatar,
+  placeholderImg,
   plsqlIcon,
   arduinoIcon,
   reactnativeIcon,
@@ -79,6 +88,13 @@ const media = {
   startupunoImg,
   tcpchatImg,
   breatheImg,
+  research_camochameleonImg,
+  research_scholarupImg,
+  research_fitnessappImg,
+  research_breatheImg,
+  // gamejournal_ow2Img,
+  // documentationWorkshopImg,
+  // vrarhistoryImg,
 };
 
 const icons = {
@@ -113,10 +129,10 @@ export const navLinks = [
     id: 'projects',
     title: 'Projects',
   },
-  // {
-  //   id: 'research',
-  //   title: 'Research',
-  // },
+  {
+    id: 'research',
+    title: 'Research',
+  },
   {
     id: 'awards',
     title: 'Awards',
@@ -135,13 +151,13 @@ export const navLinks = [
   },
 ];
 
-// TODO:
+// TODO (in progress):
 const projects = [
   // Mobile apps, networking, 
   /*{
     name: '',
     description: '',
-    image: '',
+    image: placeholderImg,
     stack: '',
     source_code_link: '',
     demo_link: '',
@@ -165,7 +181,7 @@ const projects = [
   {
     name: 'MORE PROJECTS LISTED SOON!',
     description: '',
-    image: '',
+    image: placeholderImg,
     stack: '',
     source_code_link: '',
     demo_link: '',
@@ -177,53 +193,54 @@ const research = [
   // BREATHE, ScholarUp, Camo Chameleon, Fitness App
   /*{
     name: '',
+    advised_under: '',
+    presentation: '',
     description: '',
-    image: '',
+    image: placeholderImg,
     date: '',
-    source_code_link: '',
     demo_link: '',
-    media_link: '',
+    research_link: '',
   },*/
-  // {
-  //   name: 'ScholarUp',
-  //   description: '',
-  //   image: 'Researched user interaction and user interface design principles and mobile app development to create a study aid application that helps university students organize their academic resources and improve their study habits.',
-  //   date: 'August 2024 - December 2024',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
-  //   research_link: '',
-  // },
-  // {
-  //   name: 'Camo Chameleon',
-  //   description: 'Researched how to create an educational video game that helps children improve their emotional intelligence through gameplay. Research included, but not limited to, game design principles, Unity 3D development, and psychological studies on emotional intelligence. Worked closely with mentors from the UNO Psychology Department, as well as child development experts.',
-  //   image: '',
-  //   date: 'August 2024 - January 2025',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
-  //   research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',
-  // },
-  // {
-  //   name: 'BREATHE',
-  //   description: 'Research on how to create an immersive psychological horror game that incorporates biofeedback through an embedded system and changes gameplay accordingly. Research included, but not limited to, game design principles, Unity 3D development, and Arduino integration.',
-  //   image: '',
-  //   date: 'January 2025 - Present',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
-  //   research_link: '',
-  // },
-  // {
-  //   name: 'Fitness App',
-  //   description: 'Researched how to create a fitness app that uses visualization to help users stay motivated on their fitness journey. Researched mobile app frameworks, databases, and exercise tracking methods, plus started development on the application.',
-  //   image: '',
-  //   date: 'January 2025 - May 2025',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
-  //   research_link: '',
-  // },
+  {
+    name: 'ScholarUp',
+    advised_under: 'Self',
+    presentation: '',// InnovateUNO 2023 PowerPoint
+    description: 'Researched user interaction and user interface design principles and mobile app development to create a study aid application that helps university students organize their academic resources and improve their study habits.',
+    image: research_scholarupImg,
+    date: 'August 2024 - December 2024',
+    demo_link: '',// Repository link – Installation instructions in README
+    research_link: '',// Repository link – ScholarUp Case Study
+  },
+  {
+    name: 'Camo Chameleon',
+    advised_under: 'Dr. Shreya Banerjee (Humans, Hybrid AI, and Machines Lab)',
+    presentation: '',// StartupUNO 2024 Pitch Deck
+    description: 'Researched how to create an educational video game that helps children improve their emotional intelligence through gameplay. Research included, but not limited to, game design principles, Unity 3D development, and psychological studies on emotional intelligence. Worked closely with mentors from the UNO Psychology Department, as well as child development experts.',
+    image: research_camochameleonImg,
+    date: 'August 2024 - January 2025',
+    demo_link: '',// Not allowed to share
+    research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',// ICJAI 2025 Paper (ACM.org)
+  },
+  {
+    name: 'BREATHE',
+    advised_under: 'Self',
+    presentation: '',// Initial Pitch Deck
+    description: 'Ongoing research on how to create an immersive psychological horror game that incorporates biofeedback through an embedded system and changes gameplay accordingly. Research included, but not limited to, game design principles, Unity 3D development, and Arduino integration.',
+    image: research_breatheImg,// Same image here as project image– I'd like people to be able to link it back to the project listed above
+    date: 'January 2025 - Present',
+    demo_link: '',// playbreathe.com
+    research_link: '',// No research paper formed yet -- see pink paper on desk
+  },
+  {
+    name: 'Fitness App',
+    advised_under: 'Self directed with mentor guidance under Dr. Christopher Summa (Bioinformatics & Machine Learning Lab)',
+    presentation: '',// None yet, in-progress; vision board for now?
+    description: 'Researched how to create a fitness app that uses visualization to help users stay motivated on their fitness journey. Researched mobile app development frameworks, databases, and exercise tracking methods, plus started development on the application.',
+    image: research_fitnessappImg,
+    date: 'January 2025 - May 2025',// Would like to continue working on this when I get a chance
+    demo_link: '',// Not available yet, in-progress
+    research_link: '',// No research paper formed yet
+  },
 ];
 
 const awards = [
@@ -232,7 +249,7 @@ const awards = [
     placement: '',
     award: '',
     description: '',
-    image: '',
+    image: placeholderImg,
     date: '',
     source_code_link: '',
     demo_link: '',
@@ -275,12 +292,12 @@ const awards = [
 
 // TODO (in progress):
 const blog = [
-  // Game journals, devlogs, 3090 VR/AR history (paper, presentation), Documentation workshop, Case studies (scholarup, breathe), What is a game jam at UNO like?, what is UNO IGDA like?
+  // Game journals, devlogs, 3090 VR/AR history (paper, presentation), Documentation workshop, Case studies (scholarup, breathe), VR Modding, What is a game jam at UNO like?, what is UNO IGDA like?
   /*{
     // may not need some of these fields
     name: '',
     description: '',
-    image: '',
+    image: placeholderImg,
     date: '',
     source_code_link: '',
     demo_link: '',
@@ -291,7 +308,7 @@ const blog = [
   //   name: '',
   //   blog_type: 'Game Journal',
   //   description: '',
-  //   image: '',
+  //   image: gamejournal_ow2Img,
   //   date: '',
   //   source_code_link: '',
   //   demo_link: '',
@@ -311,9 +328,9 @@ const blog = [
   // {
   //   // may not need some of these fields
   //   name: '',
-  //   blog_type: 'Research Presentation',
+  //   blog_type: 'VR/AR History & Future Presentation',
   //   description: '',
-  //   image: '',
+  //   image: vrarhistoryImg,
   //   date: '',
   //   source_code_link: '',
   //   demo_link: '',
@@ -324,7 +341,7 @@ const blog = [
   //   name: '',
   //   blog_type: 'Workshop',
   //   description: '',
-  //   image: '',
+  //   image: documentationWorkshopImg,
   //   date: '',
   //   source_code_link: '',
   //   demo_link: '',
@@ -490,4 +507,6 @@ export {
   markerSvg,
   icons,
   awards,
+  research,
+  // blog,
 };
