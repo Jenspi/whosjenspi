@@ -155,31 +155,31 @@ export const navLinks = [
 const projects = [
   // Mobile apps, networking, 
   /*{
-    name: '',
+    name: '<emoji> ',
     description: '',
     image: placeholderImg,
-    stack: '',
+    stack: '🥞 ',
     source_code_link: '',
     demo_link: '',
   },*/
   {
-    name: 'BREATHE',
+    name: '🫁 BREATHE',
     description: 'Step into the mind of Willow in this first-person psychological thriller. What began as an innocent infatuation with a local quickly twists into something dark and inescapable, and your own breathing will dictate your composure.',
     image: breatheImg,
-    stack: 'Unity 3D, C#, Arduino, Embedded Systems',
+    stack: '🥞 Unity 3D, C#, Arduino, Embedded Systems',
     source_code_link: 'https://github.com/playBREATHE',
     demo_link: 'https://jenspi.itch.io/breathe',
   },
   {
-    name: 'TCPChat',
+    name: '💬 TCPChat',
     description: 'Terminal-based TCP chat with Client-Server Architecture and extensive error handling. Works on single machine or with multiple machines on same home network.',
     image: tcpchatImg,
-    stack: 'Java, Sockets, Multi-threading',
+    stack: '🥞 Java, Sockets, Multi-threading',
     source_code_link: 'https://github.com/Jenspi/TCPChat',
     demo_link: 'https://github.com/Jenspi/TCPChat/releases',
   },
   {
-    name: 'MORE PROJECTS LISTED SOON!',
+    name: '🕳️ MORE PROJECTS LISTED SOON!',
     description: '',
     image: placeholderImg,
     stack: '',
@@ -192,61 +192,71 @@ const projects = [
 const research = [
   // BREATHE, ScholarUp, Camo Chameleon, Fitness App
   /*{
-    name: '',
+    name: '<emoji> ',
     advised_under: '',
+    lab: '',
     presentation: '',
     description: '',
     image: placeholderImg,
     date: '',
     demo_link: '',
     research_link: '',
+    pitch: '',
   },*/
   {
-    name: 'ScholarUp',
-    advised_under: 'Self',
+    name: '📚 ScholarUp',
+    advised_under: 'Self-advised and directed',
+    lab: '',// --- NONE
     presentation: '',// InnovateUNO 2023 PowerPoint
     description: 'Researched user interaction and user interface design principles and mobile app development to create a study aid application that helps university students organize their academic resources and improve their study habits.',
     image: research_scholarupImg,
-    date: 'August 2024 - December 2024',
+    date: 'Aug. - Dec. 2024',
     demo_link: '',// Repository link – Installation instructions in README
     research_link: '',// Repository link – ScholarUp Case Study
+    pitch: '',// --- NONE
   },
   {
-    name: 'Camo Chameleon',
-    advised_under: 'Dr. Shreya Banerjee (Humans, Hybrid AI, and Machines Lab)',
+    name: '🦎 Camo Chameleon',
+    advised_under: 'Advised under Dr. Shreya Banerjee',
+    lab: 'Humans, Hybrid AI, and Machines Lab',
     presentation: '',// StartupUNO 2024 Pitch Deck
     description: 'Researched how to create an educational video game that helps children improve their emotional intelligence through gameplay. Research included, but not limited to, game design principles, Unity 3D development, and psychological studies on emotional intelligence. Worked closely with mentors from the UNO Psychology Department, as well as child development experts.',
     image: research_camochameleonImg,
-    date: 'August 2024 - January 2025',
-    demo_link: '',// Not allowed to share
+    date: 'Aug. 2024 - Jan. 2025',
+    demo_link: '',// --- NONE; Not allowed to share
     research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',// ICJAI 2025 Paper (ACM.org)
+    pitch: '',// --- NONE
   },
   {
-    name: 'BREATHE',
-    advised_under: 'Self',
-    presentation: '',// Initial Pitch Deck
+    name: '🫁 BREATHE',
+    advised_under: 'Self-advised and directed',
+    lab: '',// --- NONE
+    presentation: '',// --- NONE; None yet, waiting to have fixed demo to show! Record current version?
     description: 'Ongoing research on how to create an immersive psychological horror game that incorporates biofeedback through an embedded system and changes gameplay accordingly. Research included, but not limited to, game design principles, Unity 3D development, and Arduino integration.',
     image: research_breatheImg,// Same image here as project image– I'd like people to be able to link it back to the project listed above
-    date: 'January 2025 - Present',
+    date: 'Jan. 2025 - Present',
     demo_link: '',// playbreathe.com
-    research_link: '',// No research paper formed yet -- see pink paper on desk
+    research_link: '',// --- NONE; No research paper formed yet -- see pink paper on desk
+    pitch: '',// Initial Pitch Deck
   },
   {
-    name: 'Fitness App',
-    advised_under: 'Self directed with mentor guidance under Dr. Christopher Summa (Bioinformatics & Machine Learning Lab)',
-    presentation: '',// None yet, in-progress; vision board for now?
+    name: '🏋️ Fitness App',
+    advised_under: 'Self-advised and directed with mentor guidance under Dr. Christopher Summa',
+    lab: 'Bioinformatics & Machine Learning Lab',
+    presentation: '',// --- NONE; None yet, in-progress; vision board for now?
     description: 'Researched how to create a fitness app that uses visualization to help users stay motivated on their fitness journey. Researched mobile app development frameworks, databases, and exercise tracking methods, plus started development on the application.',
     image: research_fitnessappImg,
-    date: 'January 2025 - May 2025',// Would like to continue working on this when I get a chance
-    demo_link: '',// Not available yet, in-progress
-    research_link: '',// No research paper formed yet
+    date: 'Jan. - May 2025',// Would like to continue working on this when I get a chance
+    demo_link: '',// --- NONE; Not available yet, in-progress
+    research_link: '',// --- NONE; No research paper formed yet
+    pitch: '',// --- NONE
   },
 ];
 
 const awards = [
   /*{
-    name: '',
-    placement: '',
+    name: '<emoji> ',
+    placement: '<🥇 or 🥈 or 🥉 or 🏅 or 🏆> <placement, ex. "1st">',
     award: '',
     description: '',
     image: placeholderImg,
@@ -295,7 +305,7 @@ const blog = [
   // Game journals, devlogs, 3090 VR/AR history (paper, presentation), Documentation workshop, Case studies (scholarup, breathe), VR Modding, What is a game jam at UNO like?, what is UNO IGDA like?
   /*{
     // may not need some of these fields
-    name: '',
+    name: '<emoji> ',
     description: '',
     image: placeholderImg,
     date: '',
@@ -306,8 +316,8 @@ const blog = [
   // {
   //   // may not need some of these fields
   //   name: '',
-  //   blog_type: 'Game Journal',
-  //   description: '',
+  //   blog_type: '🎮 The Downfall of Overwatch: Overwatch 2',
+  //   description: 'The downfall of the Overwatch franchise.',
   //   image: gamejournal_ow2Img,
   //   date: '',
   //   source_code_link: '',
@@ -328,8 +338,8 @@ const blog = [
   // {
   //   // may not need some of these fields
   //   name: '',
-  //   blog_type: 'VR/AR History & Future Presentation',
-  //   description: '',
+  //   blog_type: '🥽 VR/AR History & Future Presentation',
+  //   description: 'Presentation given on the history and future of VR/AR technology.',
   //   image: vrarhistoryImg,
   //   date: '',
   //   source_code_link: '',
@@ -339,8 +349,8 @@ const blog = [
   // {
   //   // may not need some of these fields
   //   name: '',
-  //   blog_type: 'Workshop',
-  //   description: '',
+  //   blog_type: '📄 Documentation Workshop',
+  //   description: 'Hosted a workshop on best practices for software documentation.',
   //   image: documentationWorkshopImg,
   //   date: '',
   //   source_code_link: '',
