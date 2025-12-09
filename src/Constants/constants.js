@@ -4,7 +4,7 @@
    FileName: constants.js
    Version: II
    Creation: 02/06/2023
-   Last modification: 11/24/2025 (Jenny Spicer)
+   Last modification: 12/08/2025 (Jenny Spicer)
 */
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -47,6 +47,8 @@ import {
   attImg,
   innovateunoImg,
   startupunoImg,
+  tcpchatImg,
+  breatheImg,
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -75,6 +77,8 @@ const media = {
   attImg,
   innovateunoImg,
   startupunoImg,
+  tcpchatImg,
+  breatheImg,
 };
 
 const icons = {
@@ -121,6 +125,10 @@ export const navLinks = [
     id: 'skills',
     title: 'Skills',
   },
+  // {
+  //   id: 'blog',
+  //   title: 'Blog',
+  // },
   {
     id: 'contact',
     title: 'Contact',
@@ -134,12 +142,37 @@ const projects = [
     name: '',
     description: '',
     image: '',
+    stack: '',
     source_code_link: '',
     demo_link: '',
   },*/
+  {
+    name: 'BREATHE',
+    description: 'Step into the mind of Willow in this first-person psychological thriller. What began as an innocent infatuation with a local quickly twists into something dark and inescapable, and your own breathing will dictate your composure.',
+    image: breatheImg,
+    stack: 'Unity 3D, C#, Arduino, Embedded Systems',
+    source_code_link: 'https://github.com/playBREATHE',
+    demo_link: 'https://jenspi.itch.io/breathe',
+  },
+  {
+    name: 'TCPChat',
+    description: 'Terminal-based TCP chat with Client-Server Architecture and extensive error handling. Works on single machine or with multiple machines on same home network.',
+    image: tcpchatImg,
+    stack: 'Java, Sockets, Multi-threading',
+    source_code_link: 'https://github.com/Jenspi/TCPChat',
+    demo_link: 'https://github.com/Jenspi/TCPChat/releases',
+  },
+  {
+    name: 'MORE PROJECTS LISTED SOON!',
+    description: '',
+    image: '',
+    stack: '',
+    source_code_link: '',
+    demo_link: '',
+  },
 ];
 
-// TODO:
+// TODO (in progress):
 const research = [
   // BREATHE, ScholarUp, Camo Chameleon, Fitness App
   /*{
@@ -151,9 +184,48 @@ const research = [
     demo_link: '',
     media_link: '',
   },*/
+  // {
+  //   name: 'ScholarUp',
+  //   description: '',
+  //   image: 'Researched user interaction and user interface design principles and mobile app development to create a study aid application that helps university students organize their academic resources and improve their study habits.',
+  //   date: 'August 2024 - December 2024',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  //   research_link: '',
+  // },
+  // {
+  //   name: 'Camo Chameleon',
+  //   description: 'Researched how to create an educational video game that helps children improve their emotional intelligence through gameplay. Research included, but not limited to, game design principles, Unity 3D development, and psychological studies on emotional intelligence. Worked closely with mentors from the UNO Psychology Department, as well as child development experts.',
+  //   image: '',
+  //   date: 'August 2024 - January 2025',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  //   research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',
+  // },
+  // {
+  //   name: 'BREATHE',
+  //   description: 'Research on how to create an immersive psychological horror game that incorporates biofeedback through an embedded system and changes gameplay accordingly. Research included, but not limited to, game design principles, Unity 3D development, and Arduino integration.',
+  //   image: '',
+  //   date: 'January 2025 - Present',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  //   research_link: '',
+  // },
+  // {
+  //   name: 'Fitness App',
+  //   description: 'Researched how to create a fitness app that uses visualization to help users stay motivated on their fitness journey. Researched mobile app frameworks, databases, and exercise tracking methods, plus started development on the application.',
+  //   image: '',
+  //   date: 'January 2025 - May 2025',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  //   research_link: '',
+  // },
 ];
 
-// TODO: (in progress)
 const awards = [
   /*{
     name: '',
@@ -199,6 +271,76 @@ const awards = [
     demo_link: 'https://github.com/Jenspi/ScholarUp/',
     media_link: 'https://www.uno.edu/innovateuno/winners',
   },
+];
+
+// TODO (in progress):
+const blog = [
+  // Game journals, devlogs, 3090 VR/AR history (paper, presentation), Documentation workshop, Case studies (scholarup, breathe), What is a game jam at UNO like?, what is UNO IGDA like?
+  /*{
+    // may not need some of these fields
+    name: '',
+    description: '',
+    image: '',
+    date: '',
+    source_code_link: '',
+    demo_link: '',
+    media_link: '',
+  },*/
+  // {
+  //   // may not need some of these fields
+  //   name: '',
+  //   blog_type: 'Game Journal',
+  //   description: '',
+  //   image: '',
+  //   date: '',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  // },
+  // {
+  //   // may not need some of these fields
+  //   name: '',
+  //   blog_type: 'Case Study',
+  //   description: '',
+  //   image: '',
+  //   date: '',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  // },
+  // {
+  //   // may not need some of these fields
+  //   name: '',
+  //   blog_type: 'Research Presentation',
+  //   description: '',
+  //   image: '',
+  //   date: '',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  // },
+  // {
+  //   // may not need some of these fields
+  //   name: '',
+  //   blog_type: 'Workshop',
+  //   description: '',
+  //   image: '',
+  //   date: '',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  // },
+  // {
+  //   // may not need some of these fields
+  //   name: '',
+  //   blog_type: 'Blog Post',
+  //   description: '',
+  //   image: '',
+  //   date: '',
+  //   source_code_link: '',
+  //   demo_link: '',
+  //   media_link: '',
+  // },
 ];
 
 const memoji = {
