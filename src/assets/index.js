@@ -2,13 +2,16 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: index.js
-   Version: II
+   Version: III
    Creation: 02/06/2023
-   Last modification: 12/08/2025 (Jenny Spicer)
+   Last modification: 12/09/2025 (Jenny Spicer)
 */
 
 // Logo
 import JennyIcon from './logo/j.png';
+
+// Placeholder images
+import placeholderImg from './placeholder.png';
 
 // Technologies
 import javaIcon from './tech/java.png';
@@ -38,16 +41,22 @@ import cppIcon from './tech/cpp.png';
 import tcpchatImg from './projects/tcpchat.png';
 import breatheImg from './projects/breathe.png';
 
-// TODO:
 // Research
-//import camochameleon from './research/camochameleon.png';
+import research_camochameleonImg from './research/research_camochameleon.png';
+import research_scholarupImg from './research/research_scholarup.png';
+import research_fitnessappImg from './research/research_fitnessapp.png';
+import research_breatheImg from './research/research_breathe.png';
 
 // Awards
 import attImg from './awards/att.jpg';
 import innovateunoImg from './awards/innovateuno.png';
 import startupunoImg from './awards/startupuno.png';
 
-// Blog / Game Journals
+// TODO (IN PROGRESS):
+// Blog
+// import gamejournal_ow2Img from './blog/gamejournal_ow2.png';
+// import documentationWorkshopImg from './blog/documentationWorkshop.png';
+// import vrarhistoryImg from './blog/vrarhistory.png';
 
 // Avatar
 import avatar from './avatar/avatar.png';
@@ -63,6 +72,7 @@ export {
   pyIcon,
   avatar,
   JennyIcon,
+  placeholderImg,
   plsqlIcon,
   arduinoIcon,
   reactnativeIcon,
@@ -81,4 +91,11 @@ export {
   startupunoImg,
   tcpchatImg,
   breatheImg,
+  research_camochameleonImg,
+  research_scholarupImg,
+  research_fitnessappImg,
+  research_breatheImg,
+  // gamejournal_ow2Img,
+  // documentationWorkshopImg,
+  // vrarhistoryImg,
 };
