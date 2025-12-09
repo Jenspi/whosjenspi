@@ -108,8 +108,6 @@ const ProjectCard = ({
     description,
     image,
     date,
-    source_code_link,
-    demo_link,
     media_link,
 }) => {
   return (
@@ -130,18 +128,6 @@ const ProjectCard = ({
                       alt={name}
                       className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
                   />
-                  {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                      <div
-                          onClick={() => window.open(source_code_link, "_blank")}
-                          className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-                      >
-                          <img
-                              src={githubIcon}
-                              alt="github"
-                              className="w-full h-full object-contain"
-                          />
-                      </div>
-                  </div> */}
               </div>
 
               <div className="mt-3">
