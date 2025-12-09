@@ -2,9 +2,9 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: ProjectCards.jsx
-   Version: I
+   Version: II
    Creation: 02/06/2023
-   Last modification: 19/04/2024
+   Last modification: 12/08/2025 (Jenny Spicer)
 */
 
 import { motion } from "framer-motion";
