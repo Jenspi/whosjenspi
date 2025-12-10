@@ -111,6 +111,7 @@ const ProjectCard = ({
   demo_link,
   demo_video,
   media_link,
+  digital_prototype,
 }) => {
   return (
 	// TODO: align text to vertical center of buttons; 
@@ -165,6 +166,16 @@ const ProjectCard = ({
 						rel="noopener noreferrer"
 					>
 						Interactive Demo
+					</a>
+					</div>}
+					{digital_prototype && <div className="mt-3 flex">
+						<a
+						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+						href={digital_prototype}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Digital Prototype
 					</a>
 					</div>}
 					{demo_video && <div className="mt-3 flex">
