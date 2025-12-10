@@ -109,6 +109,8 @@ const ProjectCard = ({
   stack,
   source_code_link,
   demo_link,
+  demo_video,
+  media_link,
 }) => {
   return (
       <Tilt
@@ -150,14 +152,37 @@ const ProjectCard = ({
                   </p>
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
-              <div className="mt-3 flex justify-center items-center">
-                  <a
-                      className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
-                      href={demo_link}
-                      target="_blank"
-                  >
-                      See the Demo
-                  </a>
+              <div className="mt-3 flex flex-wrap justify-center items-center">
+					{demo_link && <div className="mt-3 flex">
+						<a
+						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+						href={demo_link}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Interactive Demo
+					</a>
+					</div>}
+					{demo_video && <div className="mt-3 flex">
+						<a
+						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+						href={demo_video}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Demo Video
+					</a>
+					</div>}
+					{media_link && <div className="mt-3 flex">
+						<a
+						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+						href={media_link}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Award in Media
+					</a>
+					</div>}
               </div>
           </motion.div>
       </Tilt>

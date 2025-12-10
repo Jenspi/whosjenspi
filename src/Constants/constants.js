@@ -161,6 +161,8 @@ const projects = [
     stack: '🥞 ',
     source_code_link: '',
     demo_link: '',
+    demo_video: '',
+    media_link: '',
   },*/
   {
     name: '🫁 BREATHE',
@@ -169,6 +171,8 @@ const projects = [
     stack: '🥞 Unity 3D, C#, Arduino, Embedded Systems',
     source_code_link: 'https://github.com/playBREATHE',
     demo_link: 'https://jenspi.itch.io/breathe',
+    demo_video: '',// --- NONE; Teaser trailer in progress
+    media_link: '',// TODO: article about cs students
   },
   {
     name: '💬 TCPChat',
@@ -177,6 +181,8 @@ const projects = [
     stack: '🥞 Java, Sockets, Multi-threading',
     source_code_link: 'https://github.com/Jenspi/TCPChat',
     demo_link: 'https://github.com/Jenspi/TCPChat/releases',
+    demo_video: '',
+    media_link: '',
   },
   {
     name: '🕳️ MORE PROJECTS LISTED SOON!',
@@ -185,6 +191,8 @@ const projects = [
     stack: '',
     source_code_link: '',
     demo_link: '',
+    demo_video: '',
+    media_link: '',
   },
 ];
 
@@ -207,12 +215,12 @@ const research = [
     name: '📚 ScholarUp',
     advised_under: 'Self-advised and directed',
     lab: '',// --- NONE
-    presentation: '',// InnovateUNO 2023 PowerPoint OR all milestones presentation with findings etc? basically our readme but more in-depth?
+    presentation: '',// TODO: InnovateUNO 2023 PowerPoint OR all milestones presentation with findings etc? basically our readme but more in-depth?
     description: 'Researched user interaction and user interface design principles and mobile app development to create a study aid application that helps university students organize their academic resources and improve their study habits.',
     image: research_scholarupImg,
     date: 'Aug. - Dec. 2024',
-    demo_link: '',// Repository link – Installation instructions in README
-    research_link: '',// Repository link – ScholarUp Case Study
+    demo_link: '',// TODO: Repository link – Installation instructions in README
+    research_link: '',// TODO: Repository link – ScholarUp Case Study
     pitch: '',// --- NONE
   },
   {
@@ -224,8 +232,8 @@ const research = [
     image: research_camochameleonImg,
     date: 'Aug. 2024 - Jan. 2025',
     demo_link: '',// --- NONE; Not allowed to share
-    research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',// ICJAI 2025 Paper (ACM.org)
-    pitch: '',// StartupUNO 2024 Pitch Deck
+    research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',
+    pitch: '',// TODO: StartupUNO 2024 Pitch Deck
   },
   {
     name: '🫁 BREATHE',
@@ -233,11 +241,11 @@ const research = [
     lab: '',// --- NONE
     presentation: '',// --- NONE; None yet, waiting to have fixed demo to show! Record current version?
     description: 'Ongoing research on how to create an immersive psychological horror game that incorporates biofeedback through an embedded system and changes gameplay accordingly. Research included, but not limited to, game design principles, Unity 3D development, and Arduino integration.',
-    image: research_breatheImg,// Same image here as project image– I'd like people to be able to link it back to the project listed above
+    image: research_breatheImg,
     date: 'Jan. 2025 - Present',
-    demo_link: '',// playbreathe.com
+    demo_link: '',// TODO: playbreathe.com
     research_link: '',// --- NONE; No research paper formed yet -- see pink paper on desk
-    pitch: '',// Initial Pitch Deck
+    pitch: '',// TODO: Initial Pitch Deck
   },
   {
     name: '🏋️ Fitness App',
@@ -246,7 +254,7 @@ const research = [
     presentation: '',// --- NONE; None yet, in-progress; vision board for now?
     description: 'Researched how to create a fitness app that uses visualization to help users stay motivated on their fitness journey. Researched mobile app development frameworks, databases, and exercise tracking methods, plus started development on the application.',
     image: research_fitnessappImg,
-    date: 'Jan. - May 2025',// Would like to continue working on this when I get a chance
+    date: 'Jan. - May 2025',
     demo_link: '',// --- NONE; Not available yet, in-progress
     research_link: '',// --- NONE; No research paper formed yet
     pitch: '',// --- NONE
