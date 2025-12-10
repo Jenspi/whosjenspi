@@ -100,6 +100,10 @@ export const slideIn = (direction, type, delay, duration) => {
 	};
 };
 
+// TODO: align text to vertical center of buttons; 
+	// TODO: test different button gap sizes between buttons (how does it look with 1 vs 2 vs 3 v 4 buttons?)
+	// TODO: formatting of fields (e.g., date placement, advisor name placement) -- do we want all of these? how can i make it less cluttered?
+	// TODO: make description less of a big blob? with expandable/collapsible text
 const ProjectCard = ({
 	index,
 	name,
@@ -117,10 +121,6 @@ const ProjectCard = ({
     media_link,
 }) => {
   return (
-	// TODO: align text to vertical center of buttons; 
-	// TODO: test different button gap sizes between buttons (how does it look with 1 vs 2 vs 3 v 4 buttons?)
-	// TODO: formatting of fields (e.g., date placement, advisor name placement) -- do we want all of these? how can i make it less cluttered?
-	// TODO: make description less of a big blob? with expandable/collapsible text
       <Tilt
           options={{
               max: 40,
@@ -130,6 +130,7 @@ const ProjectCard = ({
           className="shadow-2xl p-5 rounded-lg sm:w-[300px] w-[100%]"
       >
           <motion.div
+		  	  className="h-full flex flex-col"
               variants={fadeIn("up", "spring", index * 0.5, 0.75)}
           >
               <div className="relative">
@@ -140,7 +141,7 @@ const ProjectCard = ({
                   />
               </div>
 
-              <div className="mt-3">
+              <div className="mt-3 flex-grow">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
                   <h4 className="text-white font-bold text-1xl">🗓️ {date}</h4>
 					{advised_under && <h4 className="text-white text-1xl flex gap-1">
@@ -170,9 +171,9 @@ const ProjectCard = ({
                   </p>{/* Can I make the project description a dropdown if it exceeds something like 6 lines? https://medium.com/@filipepfluckdev/creating-a-read-more-component-in-react-4afd1d17d40b */}
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
-			  <div className="mt-3 flex flex-wrap justify-center items-center">
+			  <div className="mt-3 flex flex-wrap justify-center items-center gap-2">
 				{/* Conditional Rendering for fields: */}
-				{pitch && <div className="mt-3 flex">
+				{pitch && <div className="mt-0 flex">
 					<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={pitch}
@@ -182,7 +183,7 @@ const ProjectCard = ({
 						Product Pitch
 					</a>
 				</div>}
-				{presentation && <div className="mt-3 flex">
+				{presentation && <div className="mt-0 flex">
 					<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={presentation}
@@ -192,7 +193,7 @@ const ProjectCard = ({
 						Product Presentation
 					</a>
 				</div>}
-				{demo_link && <div className="mt-3 flex">
+				{demo_link && <div className="mt-0 flex">
 					<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={demo_link}
@@ -202,7 +203,7 @@ const ProjectCard = ({
 						Demo Product
 					</a>
 				</div>}
-				{research_link && <div className="mt-3 flex" >
+				{research_link && <div className="mt-0 flex" >
 					<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={research_link}
@@ -212,7 +213,7 @@ const ProjectCard = ({
 						Research Documentation
 					</a>
 				</div>}
-				{media_link && <div className="mt-3 flex">
+				{media_link && <div className="mt-0 flex">
 					<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={media_link}
