@@ -108,9 +108,11 @@ const ProjectCard = ({
     description,
     image,
     date,
-    // source_code_link,
-    // demo_link,
+    // source_code_link,// Not needed for now -- all current awards are listed as projects in projects section
+    demo_link,
     media_link,
+	powerpoint,
+    demo_video,
 }) => {
   return (
       <Tilt
@@ -153,15 +155,48 @@ const ProjectCard = ({
                   </p>
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
-              <div className="mt-3 flex justify-center items-center">
-                  <a
-                      className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
-                      href={media_link}
-                      target="_blank"
-                  >
-                      Article
-                  </a>
-              </div>
+              <div className="mt-3 flex flex-wrap justify-center items-center">
+					{media_link && <div className="mt-3 flex">
+						<a
+							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+							href={media_link}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Award in Media
+						</a>
+					</div>}
+					{demo_link && <div className="mt-3 flex">
+						<a
+							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+							href={demo_link}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Interactive Demo
+						</a>
+					</div>}
+					{powerpoint && <div className="mt-3 flex">
+						<a
+							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+							href={powerpoint}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							PowerPoint
+						</a>
+					</div>}
+					{demo_video && <div className="mt-3 flex">
+						<a
+							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+							href={demo_video}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Demo Video
+						</a>
+					</div>}
+				</div>
           </motion.div>
       </Tilt>
   );
