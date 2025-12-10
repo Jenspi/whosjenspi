@@ -150,7 +150,13 @@ const ProjectCard = ({
 
               <div className="mt-3">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
-                  <h5 className="text-white font-bold text-1xl italic">{stack}</h5>
+					{stack ? 
+						<h4 className="text-white font-bold italic text-1xl flex gap-1">
+							<span>🥞</span>
+							<span>{stack}</span>
+						</h4>
+						: null
+					}
                   <p className="mt-2 text-secondary text-[14px] leading-snug">
                       {description}
                   </p>
