@@ -172,7 +172,7 @@ const projects = [
     source_code_link: 'https://github.com/playBREATHE',
     demo_link: 'https://jenspi.itch.io/breathe',
     demo_video: '',// --- NONE; Teaser trailer in progress
-    media_link: '',// TODO: article about cs students
+    media_link: 'https://www.instagram.com/p/DJ939yHPtR6/?img_index=4',
   },
   {
     name: '💬 TCPChat',
@@ -196,9 +196,8 @@ const projects = [
   },
 ];
 
-// TODO (in progress):
+// TODO (population in progress)(field visual formatting in progress):
 const research = [
-  // BREATHE, ScholarUp, Camo Chameleon, Fitness App
   /*{
     name: '<emoji> ',
     advised_under: '',
@@ -210,6 +209,7 @@ const research = [
     demo_link: '',
     research_link: '',
     pitch: '',
+    media_link: '',
   },*/
   {
     name: '📚 ScholarUp',
@@ -222,6 +222,7 @@ const research = [
     demo_link: '',// TODO: Repository link – Installation instructions in README
     research_link: '',// TODO: Repository link – ScholarUp Case Study
     pitch: '',// --- NONE
+    media_link: '',// --- NONE
   },
   {
     name: '🦎 Camo Chameleon',
@@ -233,7 +234,8 @@ const research = [
     date: 'Aug. 2024 - Jan. 2025',
     demo_link: '',// --- NONE; Not allowed to share
     research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',
-    pitch: '',// TODO: StartupUNO 2024 Pitch Deck
+    pitch: 'https://www.canva.com/design/DAG7FvAd_lY/WwMWtCtZanij5pgyPFo1vQ/edit?utm_content=DAG7FvAd_lY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+    media_link: '',// --- NONE
   },
   {
     name: '🫁 BREATHE',
@@ -246,6 +248,7 @@ const research = [
     demo_link: '',// TODO: playbreathe.com
     research_link: '',// --- NONE; No research paper formed yet -- see pink paper on desk
     pitch: '',// TODO: Initial Pitch Deck
+    media_link: '',// --- NONE
   },
   {
     name: '🏋️ Fitness App',
@@ -258,6 +261,7 @@ const research = [
     demo_link: '',// --- NONE; Not available yet, in-progress
     research_link: '',// --- NONE; No research paper formed yet
     pitch: '',// --- NONE
+    media_link: '',// --- NONE
   },
 ];
 
@@ -316,7 +320,7 @@ const awards = [
   },
 ];
 
-// TODO (in progress):
+// TODO (population in progress)(field types in progress):
 const blog = [
   // Game journals, devlogs, 3090 VR/AR history (paper, presentation), Documentation workshop, Case studies (scholarup, breathe), VR Modding, What is a game jam at UNO like?, what is UNO IGDA like?
   /*{

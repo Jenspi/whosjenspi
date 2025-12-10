@@ -2,9 +2,9 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: ResearchCards.jsx (ProjectCards.jsx modified)
-   Version: II
+   Version: III
    Creation: 02/06/2023
-   Last modification: 12/09/2024 (Jenny Spicer)
+   Last modification: 12/10/2024 (Jenny Spicer)
 */
 
 import { motion } from "framer-motion";
@@ -101,7 +101,6 @@ export const slideIn = (direction, type, delay, duration) => {
 };
 
 const ProjectCard = ({
-	// TODO: how do I make elements disappear if the correspondin fields are empty?
 	index,
 	name,
     advised_under,
@@ -113,8 +112,13 @@ const ProjectCard = ({
 	demo_link,
 	research_link,
 	pitch,
+    media_link,
 }) => {
   return (
+	// TODO: align text to vertical center of buttons; 
+	// TODO: test different button gap sizes between buttons (how does it look with 1 vs 2 vs 3 v 4 buttons?)
+	// TODO: formatting of fields (e.g., date placement, advisor name placement) -- do we want all of these? how can i make it less cluttered?
+	// TODO: make description less of a big blob? with expandable/collapsible text
       <Tilt
           options={{
               max: 40,
@@ -183,7 +187,17 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Research
+						Research Documentation
+					</a>
+				</div>}
+				{media_link && <div className="mt-3 flex">
+					<a
+						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+						href={media_link}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Research in Media
 					</a>
 				</div>}
 			   </div>
