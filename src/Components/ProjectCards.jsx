@@ -2,9 +2,9 @@
    Copyright (C), 2023-2024, Sara Echeverria (bl33h)
    Author: Sara Echeverria
    FileName: ProjectCards.jsx
-   Version: II
+   Version: III
    Creation: 02/06/2023
-   Last modification: 12/08/2025 (Jenny Spicer)
+   Last modification: 12/10/2025 (Jenny Spicer)
 */
 
 import { motion } from "framer-motion";
@@ -113,6 +113,9 @@ const ProjectCard = ({
   media_link,
 }) => {
   return (
+	// TODO: align text to vertical center of buttons; 
+	// TODO: test different button gap sizes between buttons (how does it look with 1 vs 2 vs 3 v 4 buttons?)
+	// TODO: make description less of a big blob? with expandable/collapsible text
       <Tilt
           options={{
               max: 40,
@@ -181,7 +184,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Award in Media
+						Project in Media
 					</a>
 					</div>}
               </div>
