@@ -156,6 +156,7 @@ const ProjectCard = ({
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
               <div className="mt-3 flex flex-wrap justify-center items-center">
+					{/* Conditional Rendering for fields: */}
 					{media_link && <div className="mt-3 flex">
 						<a
 							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
