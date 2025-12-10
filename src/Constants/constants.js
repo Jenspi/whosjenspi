@@ -207,7 +207,7 @@ const research = [
     name: '📚 ScholarUp',
     advised_under: 'Self-advised and directed',
     lab: '',// --- NONE
-    presentation: '',// InnovateUNO 2023 PowerPoint
+    presentation: '',// InnovateUNO 2023 PowerPoint OR all milestones presentation with findings etc? basically our readme but more in-depth?
     description: 'Researched user interaction and user interface design principles and mobile app development to create a study aid application that helps university students organize their academic resources and improve their study habits.',
     image: research_scholarupImg,
     date: 'Aug. - Dec. 2024',
@@ -219,13 +219,13 @@ const research = [
     name: '🦎 Camo Chameleon',
     advised_under: 'Advised under Dr. Shreya Banerjee',
     lab: 'Humans, Hybrid AI, and Machines Lab',
-    presentation: '',// StartupUNO 2024 Pitch Deck
+    presentation: '',// --- NONE; perhaps a presentation with my work?
     description: 'Researched how to create an educational video game that helps children improve their emotional intelligence through gameplay. Research included, but not limited to, game design principles, Unity 3D development, and psychological studies on emotional intelligence. Worked closely with mentors from the UNO Psychology Department, as well as child development experts.',
     image: research_camochameleonImg,
     date: 'Aug. 2024 - Jan. 2025',
     demo_link: '',// --- NONE; Not allowed to share
     research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',// ICJAI 2025 Paper (ACM.org)
-    pitch: '',// --- NONE
+    pitch: '',// StartupUNO 2024 Pitch Deck
   },
   {
     name: '🫁 BREATHE',
@@ -261,6 +261,8 @@ const awards = [
     description: '',
     image: placeholderImg,
     date: '',
+    powerpoint: '',
+    demo_video: '',
     source_code_link: '',
     demo_link: '',
     media_link: '',
@@ -272,6 +274,8 @@ const awards = [
     description: 'Our team of three competed against 36 other teams at the University of New Orleans, creating a business plan and prototype for our video game, Chamo Chameleon, which is aimed at helping children increase their emotional intelligence through gameplay.',
     image: startupunoImg,
     date: 'November 2024',
+    powerpoint: 'https://www.canva.com/design/DAG7FvAd_lY/WwMWtCtZanij5pgyPFo1vQ/edit?utm_content=DAG7FvAd_lY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+    demo_video: '',// --- NONE; We didn't make a demo video for this competition
     source_code_link: 'https://github.com/Jenspi/CamoChameleon',
     demo_link: 'https://github.com/Jenspi/CamoChameleon/blob/main/Startup/StartupUNO-2024.pdf',
     media_link: 'https://thebeachuno.org/startupuno/',
@@ -283,6 +287,8 @@ const awards = [
     description: 'Our team of three competed nationwide in AT&T\'s EmpowHer Hackathon, creating a website for our proposed art app, Dynamic Sketch, given the theme: create an engaging digital experience for AT&T\'s 5G and fiber expansion.',
     image: attImg,
     date: 'April 2023',
+    powerpoint: 'https://docs.google.com/presentation/d/1D47wPWVEd89Z6JNYUA9CNk1NAqs1kqAnsqeQHJaNg7o/edit?usp=sharing',
+    demo_video: 'https://youtu.be/utTS4CBUfNw',
     source_code_link: 'https://github.com/shakkalaa/Kayjen-Hacketeers?tab=readme-ov-file',
     demo_link: 'https://shakkalaa.github.io/Kayjen-Hacketeers/',
     media_link: 'https://life.att.jobs/college-students-empowher-hackathon/',
@@ -294,6 +300,8 @@ const awards = [
     description: 'Our team of three researched and developed a mobile app, ScholarUp, that was presented at UNO\'s annual research symposium, InnovateUNO, along with 100 other students and faculty.',
     image: innovateunoImg,
     date: 'November 2023',
+    powerpoint: 'https://docs.google.com/presentation/d/17w2G4pYsliUlZ8SEmiXdHXObV6MG3XdAndcf3I_jJzw/edit?usp=sharing',
+    demo_video: 'https://youtube.com/shorts/N6ICQ3HzqOQ?feature=share',
     source_code_link: 'https://github.com/Jenspi/ScholarUp/',
     demo_link: 'https://github.com/Jenspi/ScholarUp/',
     media_link: 'https://www.uno.edu/innovateuno/winners',
