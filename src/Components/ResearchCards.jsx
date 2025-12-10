@@ -104,6 +104,8 @@ const ProjectCard = ({
 	index,
 	name,
     advised_under,
+	self_advised,
+    self_directed,
 	lab,
     presentation,
     description,
@@ -141,8 +143,28 @@ const ProjectCard = ({
               <div className="mt-3">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
                   <h4 className="text-white font-bold text-1xl">🗓️ {date}</h4>
-                  <h4 className="text-white text-1xl">🔍 {advised_under}</h4>
-                  {lab && <h4 className="text-white text-1xl">🔬 {lab}</h4>}
+					{advised_under && <h4 className="text-white text-1xl flex gap-1">
+						<span>🔍</span>
+						<span><b>Advisor:</b> {advised_under}</span>
+					</h4>}
+					{self_advised ? 
+						<h4 className="text-white text-1xl flex gap-1">
+							<span>🔍</span>
+							<span><b>Self-Advised</b></span>
+						</h4>
+						: null
+					}
+					{self_directed ? 
+						<h4 className="text-white text-1xl flex gap-1">
+							<span>🗂️</span>
+							<span><b>Self-Directed</b></span>
+						</h4>
+						: null
+					}
+				  {lab && <h4 className="text-white text-1xl flex gap-1">
+						<span>🔬</span>
+						<span><i>{lab}</i></span>
+					</h4>}
                   <p className="mt-2 text-secondary text-[14px] leading-snug">
                       {description}
                   </p>{/* Can I make the project description a dropdown if it exceeds something like 6 lines? https://medium.com/@filipepfluckdev/creating-a-read-more-component-in-react-4afd1d17d40b */}
@@ -180,7 +202,7 @@ const ProjectCard = ({
 						Demo Product
 					</a>
 				</div>}
-				{research_link && <div className="mt-3 flex">
+				{research_link && <div className="mt-3 flex" >
 					<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={research_link}
