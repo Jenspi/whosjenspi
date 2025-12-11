@@ -10,6 +10,7 @@
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { research } from "../Constants/constants";
+import { useState } from "react";
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
 	return {
@@ -100,10 +101,6 @@ export const slideIn = (direction, type, delay, duration) => {
 	};
 };
 
-// TODO: align text to vertical center of buttons; 
-	// TODO: test different button gap sizes between buttons (how does it look with 1 vs 2 vs 3 v 4 buttons?)
-	// TODO: formatting of fields (e.g., date placement, advisor name placement) -- do we want all of these? how can i make it less cluttered?
-	// TODO: make description less of a big blob? with expandable/collapsible text
 const ProjectCard = ({
 	index,
 	name,
@@ -120,6 +117,7 @@ const ProjectCard = ({
 	pitch,
     media_link,
 }) => {
+	const [isExpanded, setIsExpanded] = useState(false);
   return (
       <Tilt
           options={{
@@ -166,9 +164,16 @@ const ProjectCard = ({
 						<span>🔬</span>
 						<span><i>{lab}</i></span>
 					</h4>}
-                  <p className="mt-2 text-secondary text-[14px] leading-snug">
-                      {description}
-                  </p>{/* Can I make the project description a dropdown if it exceeds something like 6 lines? https://medium.com/@filipepfluckdev/creating-a-read-more-component-in-react-4afd1d17d40b */}
+				{/* Create dropdown for description if it exceeds 4 lines */}
+				<p className={`mt-2 text-secondary text-[14px] leading-snug ${!isExpanded ? 'line-clamp-4' : ''}`}>
+					{description}
+				</p>
+				<button 
+					onClick={() => setIsExpanded(!isExpanded)}
+					className="text-primary text-[14px] mt-1 hover:underline"
+				>
+					{isExpanded ? 'See less' : 'See more...'}
+				</button>
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
 			  <div className="mt-3 flex flex-wrap justify-center items-center gap-2">
