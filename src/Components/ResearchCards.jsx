@@ -131,6 +131,7 @@ const ProjectCard = ({
 		  	  className="h-full flex flex-col"
               variants={fadeIn("up", "spring", index * 0.5, 0.75)}
           >
+			{/* Image Section */}
               <div className="relative">
                   <img
                       src={image}
@@ -138,7 +139,7 @@ const ProjectCard = ({
                       className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
                   />
               </div>
-
+		  		{/* Content Section */}
               <div className="mt-3 flex-grow">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
                   <h4 className="text-white font-bold text-1xl">🗓️ {date}</h4>
@@ -177,7 +178,7 @@ const ProjectCard = ({
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
 			  <div className="mt-3 flex flex-wrap justify-center items-center gap-2">
-				{/* Conditional Rendering for fields: */}
+				{/* BUTTONS w/ Conditional Rendering for fields: */}
 				{pitch && <div className="mt-0 flex">
 					<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
