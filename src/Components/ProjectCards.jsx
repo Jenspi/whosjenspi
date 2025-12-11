@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { projects } from "../Constants/constants";
 import { githubIcon } from "../assets";
+import { useState } from "react";
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
 	return {
@@ -113,9 +114,8 @@ const ProjectCard = ({
   media_link,
   digital_prototype,
 }) => {
+	const [isExpanded, setIsExpanded] = useState(false);
   return (
-	// TODO: align text to vertical center of buttons; 
-	// TODO: test different button gap sizes between buttons (how does it look with 1 vs 2 vs 3 v 4 buttons?)
 	// TODO: make description less of a big blob? with expandable/collapsible text
       <Tilt
           options={{
@@ -126,8 +126,10 @@ const ProjectCard = ({
           className="shadow-2xl p-5 rounded-lg sm:w-[300px] w-[100%]"
       >
           <motion.div
-              variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+		  	className="h-full flex flex-col"
+            variants={fadeIn("up", "spring", index * 0.5, 0.75)}
           >
+			{/* Image Section */}
               <div className="relative">
                   <img
                       src={image}
@@ -147,8 +149,8 @@ const ProjectCard = ({
                       </div>
                   </div>
               </div>
-
-              <div className="mt-3">
+				{/* Content Section */}
+              <div className="mt-3 flex-grow">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
 					{stack ? 
 						<h4 className="text-white font-bold italic text-1xl flex gap-1">
@@ -162,9 +164,9 @@ const ProjectCard = ({
                   </p>
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
-              <div className="mt-3 flex flex-wrap justify-center items-center">
-					{/* Conditional Rendering for fields: */}
-					{demo_link && <div className="mt-3 flex">
+              <div className="mt-1 flex flex-wrap justify-center items-center gap-2">
+					{/* BUTTONS w/ Conditional Rendering for fields: */}
+					{demo_link && <div className="mt-0 flex">
 						<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={demo_link}
@@ -174,7 +176,7 @@ const ProjectCard = ({
 						Interactive Demo
 					</a>
 					</div>}
-					{digital_prototype && <div className="mt-3 flex">
+					{digital_prototype && <div className="mt-0 flex">
 						<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={digital_prototype}
@@ -184,7 +186,7 @@ const ProjectCard = ({
 						Digital Prototype
 					</a>
 					</div>}
-					{demo_video && <div className="mt-3 flex">
+					{demo_video && <div className="mt-0 flex">
 						<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={demo_video}
@@ -194,7 +196,7 @@ const ProjectCard = ({
 						Demo Video
 					</a>
 					</div>}
-					{media_link && <div className="mt-3 flex">
+					{media_link && <div className="mt-0 flex">
 						<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 						href={media_link}

@@ -10,6 +10,7 @@
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { awards } from "../Constants/constants";
+import { useState } from "react";
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
 	return {
@@ -114,9 +115,8 @@ const ProjectCard = ({
 	powerpoint,
     demo_video,
 }) => {
+	const [isExpanded, setIsExpanded] = useState(false);
   return (
-	// TODO: align text to vertical center of buttons; 
-  	// TODO: test different button gap sizes between buttons (how does it look with 1 vs 2 vs 3 v 4 buttons?)
 	// TODO: make description less of a big blob? with expandable/collapsible text
       <Tilt
           options={{
@@ -127,8 +127,10 @@ const ProjectCard = ({
           className="shadow-2xl p-5 rounded-lg sm:w-[300px] w-[100%]"
       >
           <motion.div
-              variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+		  	className="h-full flex flex-col"
+            ariants={fadeIn("up", "spring", index * 0.5, 0.75)}
           >
+			{/* Image Section */}
               <div className="relative">
                   <img
                       src={image}
@@ -148,8 +150,8 @@ const ProjectCard = ({
                       </div>
                   </div> */}
               </div>
-
-              <div className="mt-3">
+				{/* Content Section */}
+              <div className="mt-3 flex-grow">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
                   <h4 className="text-white font-bold text-1xl">🗓️ {date}</h4>
                   <h4 className="text-white font-bold text-1xl">{placement}: {award}</h4>
@@ -158,9 +160,9 @@ const ProjectCard = ({
                   </p>
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
-              <div className="mt-3 flex flex-wrap justify-center items-center">
-					{/* Conditional Rendering for fields: */}
-					{media_link && <div className="mt-3 flex">
+              <div className="mt-3 flex flex-wrap justify-center items-center gap-2">
+					{/* BUTTONS w/ Conditional Rendering for fields: */}
+					{media_link && <div className="mt-0 flex">
 						<a
 							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 							href={media_link}
@@ -170,7 +172,7 @@ const ProjectCard = ({
 							Award in Media
 						</a>
 					</div>}
-					{demo_link && <div className="mt-3 flex">
+					{demo_link && <div className="mt-0 flex">
 						<a
 							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 							href={demo_link}
@@ -180,7 +182,7 @@ const ProjectCard = ({
 							Interactive Demo
 						</a>
 					</div>}
-					{powerpoint && <div className="mt-3 flex">
+					{powerpoint && <div className="mt-0 flex">
 						<a
 							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 							href={powerpoint}
@@ -190,7 +192,7 @@ const ProjectCard = ({
 							PowerPoint
 						</a>
 					</div>}
-					{demo_video && <div className="mt-3 flex">
+					{demo_video && <div className="mt-0 flex">
 						<a
 							className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
 							href={demo_video}
