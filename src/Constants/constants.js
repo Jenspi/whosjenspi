@@ -151,38 +151,39 @@ export const navLinks = [
   },
 ];
 
-// TODO (in progress):
+// TODO (in progress)(population in progress):
 const projects = [
   // Mobile apps, networking, 
   /*{
     name: '<emoji> ',
     description: '',
     image: placeholderImg,
-    stack: '🥞 ',
+    stack: '',
     source_code_link: '',
     demo_link: '',
     demo_video: '',
     media_link: '',
+    digital_prototype: '',
   },*/
   {
     name: '🫁 BREATHE',
     description: 'Step into the mind of Willow in this first-person psychological thriller. What began as an innocent infatuation with a local quickly twists into something dark and inescapable, and your own breathing will dictate your composure.',
     image: breatheImg,
-    stack: '🥞 Unity 3D, C#, Arduino, Embedded Systems',
-    source_code_link: 'https://github.com/playBREATHE',
+    stack: 'Unity 3D, C#, Arduino, Embedded Systems',
+    source_code_link: 'https://github.com/playBREATHE',// follow our org, not get code ;)
     demo_link: 'https://jenspi.itch.io/breathe',
-    demo_video: '',// --- NONE; Teaser trailer in progress
+    demo_video: '',// TODO: Teaser trailer in progress
     media_link: 'https://www.instagram.com/p/DJ939yHPtR6/?img_index=4',
+    digital_prototype: 'https://youtu.be/bh5EvOrB7Q0',
   },
   {
-    name: '💬 TCPChat',
+    name: '💬 TCPChat 1.0',
     description: 'Terminal-based TCP chat with Client-Server Architecture and extensive error handling. Works on single machine or with multiple machines on same home network.',
     image: tcpchatImg,
-    stack: '🥞 Java, Sockets, Multi-threading',
+    stack: 'Java, Sockets, Multithreading',
     source_code_link: 'https://github.com/Jenspi/TCPChat',
     demo_link: 'https://github.com/Jenspi/TCPChat/releases',
-    demo_video: '',
-    media_link: '',
+    demo_video: '',// TODO: demo in progress
   },
   {
     name: '🕳️ MORE PROJECTS LISTED SOON!',
@@ -193,78 +194,91 @@ const projects = [
     demo_link: '',
     demo_video: '',
     media_link: '',
+    digital_prototype: '',
   },
 ];
 
-// TODO (population in progress)(field visual formatting in progress):
+// TODO (population in progress):
 const research = [
   /*{
     name: '<emoji> ',
-    advised_under: '',
+    advised_under: '<do not include advised_under field if self-advised>',
+    self_advised: true <do not include if advised under someone>,
+    self_directed: true <<do not include if directed under someone>,
     lab: '',
     presentation: '',
     description: '',
     image: placeholderImg,
     date: '',
     demo_link: '',
+    demo_video:'',
     research_link: '',
     pitch: '',
     media_link: '',
+    short_description: '',
+    // tags: '',
   },*/
   {
     name: '📚 ScholarUp',
-    advised_under: 'Self-advised and directed',
-    lab: '',// --- NONE
-    presentation: '',// TODO: InnovateUNO 2023 PowerPoint OR all milestones presentation with findings etc? basically our readme but more in-depth?
-    description: 'Researched user interaction and user interface design principles and mobile app development to create a study aid application that helps university students organize their academic resources and improve their study habits.',
+    self_advised: true,
+    self_directed: true,
+    presentation: '',// TODO: powerpoint in progress
+    description: 'Researched UI/UX design principles and mobile development to create a study aid app helping university students organize academic resources and improve study habits.',
     image: research_scholarupImg,
     date: 'Aug. - Dec. 2024',
-    demo_link: '',// TODO: Repository link – Installation instructions in README
-    research_link: '',// TODO: Repository link – ScholarUp Case Study
-    pitch: '',// --- NONE
-    media_link: '',// --- NONE
+    demo_link: 'https://github.com/Jenspi/ScholarUp/?tab=readme-ov-file#-installation',// cannot package on github without adding to npm registry, making it an open-source library. Also can't find a way to host the live demo where it won't cost money. :(
+    demo_video:'https://youtube.com/shorts/N6ICQ3HzqOQ?feature=share',
+    research_link: 'https://github.com/Jenspi/ScholarUp/tree/main?tab=readme-ov-file#-scholarup-case-study',// TODO: paper in progress
+    pitch: '',// --- TODO: milestone 2 converted into nice pdf or presentation in progress
+    short_description: 'ScholarUp is your next fav. mobile study app! All the features you need to study consistently + successfully, with a meticulous color scheme of green/white/brown. 📄‧₊˚🖇️✩ ₊˚🎧⊹♡',
   },
   {
     name: '🦎 Camo Chameleon',
-    advised_under: 'Advised under Dr. Shreya Banerjee',
+    advised_under: 'Dr. Shreya Banerjee',
+    self_directed: true,
     lab: 'Humans, Hybrid AI, and Machines Lab',
-    presentation: '',// --- NONE; perhaps a presentation with my work?
-    description: 'Researched how to create an educational video game that helps children improve their emotional intelligence through gameplay. Research included, but not limited to, game design principles, Unity 3D development, and psychological studies on emotional intelligence. Worked closely with mentors from the UNO Psychology Department, as well as child development experts.',
+    presentation: '',// TODO: powerpoint in progress
+    description: 'Researched game design principles, Unity 3D development, and psychological studies on emotional intelligence to create an educational video game helping children improve emotional intelligence through cross-disciplinary collaboration.',
     image: research_camochameleonImg,
     date: 'Aug. 2024 - Jan. 2025',
-    demo_link: '',// --- NONE; Not allowed to share
+    demo_link: '',// TODO: very small demo in progress
+    demo_video:'',// TODO: demo in progress
     research_link: 'https://dl.acm.org/doi/10.24963/ijcai.2025/1062',
     pitch: 'https://www.canva.com/design/DAG7FvAd_lY/WwMWtCtZanij5pgyPFo1vQ/edit?utm_content=DAG7FvAd_lY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
-    media_link: '',// --- NONE
+    short_description: 'Camo Chameleon is a digital game that utilizes artificial intelligence to help improve children\'s emotional intelligence in a gamified approach.˙✧˖°🎮 ⋆｡˚🕹. ݁₊ ⊹ . ',
   },
   {
+    // research still in progress
     name: '🫁 BREATHE',
-    advised_under: 'Self-advised and directed',
-    lab: '',// --- NONE
-    presentation: '',// --- NONE; None yet, waiting to have fixed demo to show! Record current version?
-    description: 'Ongoing research on how to create an immersive psychological horror game that incorporates biofeedback through an embedded system and changes gameplay accordingly. Research included, but not limited to, game design principles, Unity 3D development, and Arduino integration.',
+    self_advised: true,
+    self_directed: true,
+    description: 'Ongoing research on creating an immersive psychological horror game that uses biofeedback through Arduino-integrated embedded systems to dynamically adapt gameplay, incorporating game design principles and Unity 3D development.',
     image: research_breatheImg,
     date: 'Jan. 2025 - Present',
-    demo_link: '',// TODO: playbreathe.com
-    research_link: '',// --- NONE; No research paper formed yet -- see pink paper on desk
-    pitch: '',// TODO: Initial Pitch Deck
-    media_link: '',// --- NONE
+    demo_link: 'https://jenspi.itch.io/breathe',
+    research_link: '',// TODO: paper/presentation in progress
+    pitch: 'https://www.canva.com/design/DAGd_wtc9KE/1VDfyXGm-PnF8Dr3A2_ZJw/edit?utm_content=DAGd_wtc9KE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+    short_description: 'Step right into this first-person psychological thriller with biofeedback. 🫁˚˖𓍢༄˖࿔ˎˊ˗',
   },
   {
-    name: '🏋️ Fitness App',
-    advised_under: 'Self-advised and directed with mentor guidance under Dr. Christopher Summa',
+    // research still in progress
+    name: '🏋️ Fitness Tracker',
+    advised_under: 'Dr. C. Summa',
+    self_directed: true,
     lab: 'Bioinformatics & Machine Learning Lab',
-    presentation: '',// --- NONE; None yet, in-progress; vision board for now?
+    presentation: '',// TODO: presentation in progress
     description: 'Researched how to create a fitness app that uses visualization to help users stay motivated on their fitness journey. Researched mobile app development frameworks, databases, and exercise tracking methods, plus started development on the application.',
     image: research_fitnessappImg,
     date: 'Jan. - May 2025',
-    demo_link: '',// --- NONE; Not available yet, in-progress
-    research_link: '',// --- NONE; No research paper formed yet
-    pitch: '',// --- NONE
-    media_link: '',// --- NONE
+    demo_link: '',// TODO: interactive demo in progress
+    demo_video:'',// TODO: demo video in progress
+    research_link: '',// TODO: paper in progress
+    pitch: '',// TODO: converting pitch files into presentable PDF or presentation in progress
+    short_description: 'Track and visualize your fitness data right at your fingertips-- leave all of the dirty work to your app! Calisthenics, strength training, running.. There is something for everyone! ˙✧˖°👟 ༘ ⋆｡˚🎧',
   },
 ];
 
+// TODO: go through and see what fields are already in projects, and what fields are being filled with the project and not specifically the award; easiest to look directly at site.
 const awards = [
   /*{
     name: '<emoji> ',
@@ -275,9 +289,12 @@ const awards = [
     date: '',
     powerpoint: '',
     demo_video: '',
-    source_code_link: '',
+    // source_code_link: '',// not implemented at the moment; all current awards are listed as projects in projects section
     demo_link: '',
     media_link: '',
+    see_in_projects: <true or false>,
+    see_in_research: <true or false>,
+    see_in_blog: <true or false>,
   },*/
   {
     name: '⚡️ StartupUNO',
@@ -287,10 +304,11 @@ const awards = [
     image: startupunoImg,
     date: 'November 2024',
     powerpoint: 'https://www.canva.com/design/DAG7FvAd_lY/WwMWtCtZanij5pgyPFo1vQ/edit?utm_content=DAG7FvAd_lY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
-    demo_video: '',// --- NONE; We didn't make a demo video for this competition
-    source_code_link: 'https://github.com/Jenspi/CamoChameleon',
-    demo_link: 'https://github.com/Jenspi/CamoChameleon/blob/main/Startup/StartupUNO-2024.pdf',
+    // source_code_link: 'https://github.com/Jenspi/CamoChameleon', // this repo is private
     media_link: 'https://thebeachuno.org/startupuno/',
+    see_in_projects: false,
+    see_in_research: true,
+    see_in_blog: false,
   },
   {
     name: '🌐 AT&T Hackathon',
@@ -301,9 +319,11 @@ const awards = [
     date: 'April 2023',
     powerpoint: 'https://docs.google.com/presentation/d/1D47wPWVEd89Z6JNYUA9CNk1NAqs1kqAnsqeQHJaNg7o/edit?usp=sharing',
     demo_video: 'https://youtu.be/utTS4CBUfNw',
-    source_code_link: 'https://github.com/shakkalaa/Kayjen-Hacketeers?tab=readme-ov-file',
     demo_link: 'https://shakkalaa.github.io/Kayjen-Hacketeers/',
     media_link: 'https://life.att.jobs/college-students-empowher-hackathon/',
+    see_in_projects: false,
+    see_in_research: false,
+    see_in_blog: false,
   },
   {
     name: '💡 InnovateUNO',
@@ -313,16 +333,15 @@ const awards = [
     image: innovateunoImg,
     date: 'November 2023',
     powerpoint: 'https://docs.google.com/presentation/d/17w2G4pYsliUlZ8SEmiXdHXObV6MG3XdAndcf3I_jJzw/edit?usp=sharing',
-    demo_video: 'https://youtube.com/shorts/N6ICQ3HzqOQ?feature=share',
-    source_code_link: 'https://github.com/Jenspi/ScholarUp/',
-    demo_link: 'https://github.com/Jenspi/ScholarUp/',
     media_link: 'https://www.uno.edu/innovateuno/winners',
+    see_in_projects: false,
+    see_in_research: true,
+    // see_in_blog: <true or false>,// TODO: decide
   },
 ];
 
-// TODO (population in progress)(field types in progress):
+// TODO (population in progress)(field types in progress)(see todos doc on desktop):
 const blog = [
-  // Game journals, devlogs, 3090 VR/AR history (paper, presentation), Documentation workshop, Case studies (scholarup, breathe), VR Modding, What is a game jam at UNO like?, what is UNO IGDA like?
   /*{
     // may not need some of these fields
     name: '<emoji> ',
@@ -347,17 +366,6 @@ const blog = [
   // {
   //   // may not need some of these fields
   //   name: '',
-  //   blog_type: 'Case Study',
-  //   description: '',
-  //   image: '',
-  //   date: '',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
-  // },
-  // {
-  //   // may not need some of these fields
-  //   name: '',
   //   blog_type: '🥽 VR/AR History & Future Presentation',
   //   description: 'Presentation given on the history and future of VR/AR technology.',
   //   image: vrarhistoryImg,
@@ -372,17 +380,6 @@ const blog = [
   //   blog_type: '📄 Documentation Workshop',
   //   description: 'Hosted a workshop on best practices for software documentation.',
   //   image: documentationWorkshopImg,
-  //   date: '',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
-  // },
-  // {
-  //   // may not need some of these fields
-  //   name: '',
-  //   blog_type: 'Blog Post',
-  //   description: '',
-  //   image: '',
   //   date: '',
   //   source_code_link: '',
   //   demo_link: '',
