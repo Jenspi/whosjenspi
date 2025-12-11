@@ -159,9 +159,16 @@ const ProjectCard = ({
 						</h4>
 						: null
 					}
-                  <p className="mt-2 text-secondary text-[14px] leading-snug">
-                      {description}
-                  </p>
+				  {/* Create dropdown for description if it exceeds 4 lines */}
+				<p className={`mt-2 text-secondary text-[14px] leading-snug ${!isExpanded ? 'line-clamp-4' : ''}`}>
+					{description}
+				</p>
+				<button 
+					onClick={() => setIsExpanded(!isExpanded)}
+					className="text-primary text-[14px] mt-1 hover:underline"
+				>
+					{isExpanded ? 'See less' : 'See more...'}
+				</button>
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
               <div className="mt-1 flex flex-wrap justify-center items-center gap-2">
