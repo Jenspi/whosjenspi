@@ -135,7 +135,7 @@ const ProjectCard = ({
                   <img
                       src={image}
                       alt={name}
-                      className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
+                      className="w-full h-full md:h-[200px] object-cover rounded-lg relative"//200px high, ~250px wide
                   />
                   {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
                       <div
@@ -156,12 +156,12 @@ const ProjectCard = ({
                   <h4 className="text-white font-bold text-1xl">🗓️ {date}</h4>
                   <h4 className="text-white font-bold text-1xl">{placement}: {award}</h4>
 				  {/* Create dropdown for description if it exceeds 4 lines */}
-				<p className={`mt-2 text-secondary text-[14px] leading-snug ${!isExpanded ? 'line-clamp-4' : ''}`}>
+				<p className={`mt-2 text-secondary text-[14px] leading-snug  ${!isExpanded ? 'line-clamp-4' : ''}`}>
 					{description}
 				</p>
 				<button 
 					onClick={() => setIsExpanded(!isExpanded)}
-					className="text-primary text-[14px] mt-1 hover:underline"
+					className="text-primary text-[14px] mt-1 hover:underline text-right w-full"
 				>
 					{isExpanded ? 'See less' : 'See more...'}
 				</button>
@@ -186,7 +186,7 @@ const ProjectCard = ({
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Interactive Demo
+							{/* Interactive Demo */}Demo
 						</a>
 					</div>}
 					{powerpoint && <div className="mt-0 flex">
@@ -206,7 +206,7 @@ const ProjectCard = ({
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Demo Video
+							{/* Demo Video */}Video
 						</a>
 					</div>}
 				</div>

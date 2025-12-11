@@ -165,7 +165,7 @@ const ProjectCard = ({
 				</p>
 				<button 
 					onClick={() => setIsExpanded(!isExpanded)}
-					className="text-primary text-[14px] mt-1 hover:underline"
+					className="text-primary text-[14px] mt-1 hover:underline text-right w-full"
 				>
 					{isExpanded ? 'See less' : 'See more...'}
 				</button>
@@ -180,7 +180,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Interactive Demo
+						{/* Interactive Demo */}Demo
 					</a>
 					</div>}
 					{digital_prototype && <div className="mt-0 flex">
@@ -190,7 +190,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Digital Prototype
+						{/* Digital Prototype */}Prototype
 					</a>
 					</div>}
 					{demo_video && <div className="mt-0 flex">
@@ -200,7 +200,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Demo Video
+						{/* Demo Video */}Video
 					</a>
 					</div>}
 					{media_link && <div className="mt-0 flex">
