@@ -116,6 +116,8 @@ const ProjectCard = ({
 	research_link,
 	pitch,
     media_link,
+	test,
+	tags,
 }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
   return (
@@ -142,39 +144,60 @@ const ProjectCard = ({
 		  		{/* Content Section */}
               <div className="mt-3 flex-grow">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
-                  <h4 className="text-white font-bold text-1xl">🗓️ {date}</h4>
-					{advised_under && <h4 className="text-white text-1xl flex gap-1">
-						<span>🔍</span>
-						<span><b>Advisor:</b> {advised_under}</span>
-					</h4>}
-					{self_advised ? 
-						<h4 className="text-white text-1xl flex gap-1">
-							<span>🔍</span>
-							<span><b>Self-Advised</b></span>
-						</h4>
-						: null
-					}
-					{self_directed ? 
-						<h4 className="text-white text-1xl flex gap-1">
-							<span>🗂️</span>
-							<span><b>Self-Directed</b></span>
-						</h4>
-						: null
-					}
-				  {lab && <h4 className="text-white text-1xl flex gap-1">
-						<span>🔬</span>
-						<span><i>{lab}</i></span>
-					</h4>}
 				{/* Create dropdown for description if it exceeds 4 lines */}
-				<p className={`mt-2 text-secondary text-[14px] leading-snug ${!isExpanded ? 'line-clamp-4' : ''}`}>
-					{description}
-				</p>
-				<button 
-					onClick={() => setIsExpanded(!isExpanded)}
-					className="text-primary text-[14px] mt-1 hover:underline"
-				>
-					{isExpanded ? 'See less' : 'See more...'}
-				</button>
+				{!isExpanded && <p className={`mt-0 text-secondary text-[14px] leading-snug ${!isExpanded ? 'line-clamp-6' : ''}`}>
+					{/* {tags && <p className="text-white text-secondary text-[16px] flex gap-1">
+		  				<span>🔗</span>
+						<span><b><i>{tags}</i></b></span>
+				   	</p>} */}
+					{test}
+				</p>}
+				<div className={`mt-0 text-secondary text-[14px] leading-snug ${!isExpanded ? 'line-clamp-1' : ''}`}>
+				
+					{!isExpanded && <button 
+						onClick={() => setIsExpanded(!isExpanded)}
+						className="text-primary text-[14px] mt-1 hover:underline text-right w-full"
+					>
+						{isExpanded ? 'Less Details...' : 'More Details...'}
+					</button>}
+
+					<p className="text-white font-bold text-secondary text-[16px]">🗓️ {date}</p>
+						{advised_under && <p className="text-white text-secondary text-[16px] flex gap-1">
+							<span>🔍</span>
+							<span><b>Advisor:</b> {advised_under}</span>
+						</p>}
+						{self_advised ? 
+							<p className="text-white text-secondary text-[16px] flex gap-1">
+								<span>🔍</span>
+								<span><b>Self-Advised</b></span>
+							</p>
+							: null
+						}
+						{self_directed ? 
+							<p className="text-white text-secondary text-[16px] flex gap-1">
+								<span>🗂️</span>
+								<span><b>Self-Directed</b></span>
+							</p>
+							: null
+						}
+					{lab && <p className="text-white text-secondary text-[16px] flex gap-1">
+							<span>🔬</span>
+							<span><i>{lab}</i></span>
+						</p>}
+						{/* Description Section */}
+						<div className={`mt-2 text-secondary text-[14px] leading-snug ${isExpanded ? 'line-clamp-10' : ''}`}>
+							<p className='mt-2 text-secondary text-[14px]'>
+								{description}
+							</p>
+						</div>
+						{/* Toggle Button */}
+						{isExpanded && <button 
+							onClick={() => setIsExpanded(!isExpanded)}
+							className="text-primary text-[14px] mt-1 hover:underline text-right w-full"
+						>
+							{isExpanded ? 'Less Details...' : 'More Details...'}
+						</button>}
+				</div>{/* might need to be up */}
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
 			  <div className="mt-3 flex flex-wrap justify-center items-center gap-2">
@@ -186,7 +209,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Product Pitch
+						{/* Product Pitch */}Pitch
 					</a>
 				</div>}
 				{presentation && <div className="mt-0 flex">
@@ -196,7 +219,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Product Presentation
+						{/* Product Presentation */}Presentation
 					</a>
 				</div>}
 				{demo_link && <div className="mt-0 flex">
@@ -206,7 +229,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Demo Product
+						{/* Demo Product */}Demo
 					</a>
 				</div>}
 				{research_link && <div className="mt-0 flex" >
@@ -216,7 +239,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						Research Documentation
+						Documentation
 					</a>
 				</div>}
 				{media_link && <div className="mt-0 flex">
