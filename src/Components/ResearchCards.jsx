@@ -116,8 +116,8 @@ const ProjectCard = ({
 	research_link,
 	pitch,
     media_link,
-	test,
-	tags,
+	short_description,
+	// tags,
 }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
   return (
@@ -150,7 +150,7 @@ const ProjectCard = ({
 		  				<span>🔗</span>
 						<span><b><i>{tags}</i></b></span>
 				   	</p>} */}
-					{test}
+					{short_description}
 				</p>}
 				<div className={`mt-0 text-secondary text-[14px] leading-snug ${!isExpanded ? 'line-clamp-1' : ''}`}>
 				
