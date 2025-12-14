@@ -40,6 +40,7 @@ import cppIcon from './tech/cpp.png';
 // Projects
 import tcpchatImg from './projects/tcpchat.png';
 import breatheImg from './projects/breathe.png';
+import ecommercedbImg from './projects/ecommercedb.gif';
 
 // Research
 import research_camochameleonImg from './research/research_camochameleon.png';
@@ -95,6 +96,7 @@ export {
   research_scholarupImg,
   research_fitnessappImg,
   research_breatheImg,
+  ecommercedbImg,
   // gamejournal_ow2Img,
   // documentationWorkshopImg,
   // vrarhistoryImg,
