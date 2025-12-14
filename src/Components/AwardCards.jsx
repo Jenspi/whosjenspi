@@ -117,7 +117,6 @@ const ProjectCard = ({
 }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
   return (
-	// TODO: make description less of a big blob? with expandable/collapsible text
       <Tilt
           options={{
               max: 40,
