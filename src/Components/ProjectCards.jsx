@@ -12,6 +12,7 @@ import { Tilt } from "react-tilt";
 import { projects } from "../Constants/constants";
 import { githubIcon } from "../assets";
 import { useState } from "react";
+import { ReadMore } from "./ReadMore.jsx";
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
 	return {
@@ -116,7 +117,6 @@ const ProjectCard = ({
 }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
   return (
-	// TODO: make description less of a big blob? with expandable/collapsible text
       <Tilt
           options={{
               max: 40,
@@ -159,16 +159,10 @@ const ProjectCard = ({
 						</h4>
 						: null
 					}
-				  {/* Create dropdown for description if it exceeds 4 lines */}
-				<p className={`mt-2 text-secondary text-[14px] leading-snug ${!isExpanded ? 'line-clamp-4' : ''}`}>
-					{description}
-				</p>
-				<button 
-					onClick={() => setIsExpanded(!isExpanded)}
-					className="text-primary text-[14px] mt-1 hover:underline text-right w-full"
-				>
-					{isExpanded ? 'See less' : 'See more...'}
-				</button>
+				  {/* Allow for "read more" button if line exceeds 25 words (defined by src/Components/ReadMore.jsx) */}
+				  <div className="mt-2 text-secondary text-[14px] leading-snug">
+						<ReadMore id="read-more-text" text={description} />
+					</div>
               </div>
               <div className="mt-2 flex flex-wrap gap-1"></div>
               <div className="mt-1 flex flex-wrap justify-center items-center gap-2">
