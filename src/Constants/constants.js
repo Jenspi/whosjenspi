@@ -54,6 +54,7 @@ import {
   research_scholarupImg,
   research_fitnessappImg,
   research_breatheImg,
+  ecommercedbImg,
   // gamejournal_ow2Img,
   // documentationWorkshopImg,
   // vrarhistoryImg,
@@ -92,6 +93,7 @@ const media = {
   research_scholarupImg,
   research_fitnessappImg,
   research_breatheImg,
+  ecommercedbImg,
   // gamejournal_ow2Img,
   // documentationWorkshopImg,
   // vrarhistoryImg,
@@ -151,7 +153,7 @@ export const navLinks = [
   },
 ];
 
-// TODO (in progress)(population in progress):
+// TODO (population in progress):
 const projects = [
   // Mobile apps, networking, 
   /*{
@@ -184,6 +186,15 @@ const projects = [
     source_code_link: 'https://github.com/Jenspi/TCPChat',
     demo_link: 'https://github.com/Jenspi/TCPChat/releases',
     demo_video: '',// TODO: demo in progress
+  },
+  {
+    name: '🛍️ E-Commerce DBMS',
+    description: 'Design schemas, manage data, run queries, and modularize code for easy reuse & testing. .    ༘˚⋆🛍️ ｡⋆ 🛒 ⋆ 𖦹.✧˚',
+    image: ecommercedbImg,
+    stack: 'PL/SQL, Java, Oracle SQL Developer, JDBC',
+    source_code_link: 'https://github.com/Jenspi/databases',
+    demo_link: 'https://github.com/Jenspi/databases?tab=readme-ov-file#-run-this-project-no-installation-required',
+    demo_video: '',// TODO: do I want to do this?
   },
   {
     name: '🕳️ MORE PROJECTS LISTED SOON!',
