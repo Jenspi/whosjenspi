@@ -15,7 +15,7 @@ import Skills from "../Pages/Skills";
 import Contact from "../Pages/Contact";
 import Awards from "../Pages/Awards";
 import Research from "../Pages/Research";
-//import Blog from "../Pages/Blog";
+import Blog from "../Pages/Blogs";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       <Research />
       <Awards />
       <Skills />
-      {/* TODO: Blog / Game Journals */}
+      <Blog />
       <Contact />
     </>
   );
