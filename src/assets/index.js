@@ -55,7 +55,8 @@ import startupunoImg from './awards/startupuno.png';
 
 // TODO (IN PROGRESS):
 // Blog
-// import gamejournal_ow2Img from './blog/gamejournal_ow2.png';
+import gamejournal_ow2Img from './blog/gamejournal_ow2.png';
+import gamejournal_ptcgpImg from './blog/gamejournal_ptcgp.png';
 // import documentationWorkshopImg from './blog/documentationWorkshop.png';
 // import vrarhistoryImg from './blog/vrarhistory.png';
 
@@ -97,7 +98,8 @@ export {
   research_fitnessappImg,
   research_breatheImg,
   ecommercedbImg,
-  // gamejournal_ow2Img,
+  gamejournal_ow2Img,
+  gamejournal_ptcgpImg,
   // documentationWorkshopImg,
   // vrarhistoryImg,
 };
