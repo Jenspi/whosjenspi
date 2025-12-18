@@ -137,7 +137,7 @@ const ProjectCard = ({
                       className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
                   />
                   <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                      <div
+                      {source_code_link && <div
                           onClick={() => window.open(source_code_link, "_blank")}
                           className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
                       >
@@ -146,7 +146,7 @@ const ProjectCard = ({
                               alt="github"
                               className="w-full h-full object-contain"
                           />
-                      </div>
+                      </div>}
                   </div>
               </div>
 				{/* Content Section */}
