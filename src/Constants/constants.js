@@ -4,7 +4,7 @@
    FileName: constants.js
    Version: II
    Creation: 02/06/2023
-   Last modification: 12/08/2025 (Jenny Spicer)
+   Last modification: 12/17/2025 (Jenny Spicer)
 */
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -55,7 +55,8 @@ import {
   research_fitnessappImg,
   research_breatheImg,
   ecommercedbImg,
-  // gamejournal_ow2Img,
+  gamejournal_ow2Img,
+  gamejournal_ptcgpImg,
   // documentationWorkshopImg,
   // vrarhistoryImg,
 } from '../assets';
@@ -94,7 +95,8 @@ const media = {
   research_fitnessappImg,
   research_breatheImg,
   ecommercedbImg,
-  // gamejournal_ow2Img,
+  gamejournal_ow2Img,
+  gamejournal_ptcgpImg,
   // documentationWorkshopImg,
   // vrarhistoryImg,
 };
@@ -143,10 +145,10 @@ export const navLinks = [
     id: 'skills',
     title: 'Skills',
   },
-  // {
-  //   id: 'blog',
-  //   title: 'Blog',
-  // },
+  {
+    id: 'blog',
+    title: 'Blog',
+  },
   {
     id: 'contact',
     title: 'Contact',
@@ -195,6 +197,16 @@ const projects = [
     source_code_link: 'https://github.com/Jenspi/databases',
     demo_link: 'https://github.com/Jenspi/databases?tab=readme-ov-file#-run-this-project-no-installation-required',
     demo_video: '',// TODO: do I want to do this?
+  },
+  {
+    name: '🧮 Sorts',
+    description: '',// TODO: in progress
+    image: placeholderImg,// TODO: in progress
+    stack: 'Unity 3D, C#',
+    source_code_link: '',// TODO: in progress; do I want this public?
+    demo_link: '',// TODO: in progress
+    demo_video: '',// TODO: in progress
+    digital_prototype: '',// TODO: do I have one?
   },
   {
     name: '🕳️ MORE PROJECTS LISTED SOON!',
@@ -362,18 +374,32 @@ const blog = [
     source_code_link: '',
     demo_link: '',
     media_link: '',
+    game_journal: '',
   },*/
-  // {
-  //   // may not need some of these fields
-  //   name: '',
-  //   blog_type: '🎮 The Downfall of Overwatch: Overwatch 2',
-  //   description: 'The downfall of the Overwatch franchise.',
-  //   image: gamejournal_ow2Img,
-  //   date: '',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
-  // },
+  {
+    // may not need some of these fields
+    name: '',
+    blog_type: '🎮 The Downfall of Overwatch: Overwatch 2',
+    description: 'The downfall of the Overwatch franchise.',
+    image: gamejournal_ow2Img,
+    date: 'Fall 2024',
+    source_code_link: '',
+    demo_link: '',
+    media_link: '',
+    game_journal_link: 'https://drive.google.com/file/d/122coP7sfmYEJx7e0Sy3E4XWMwBMokfkL/view?usp=share_link',
+  },
+  {
+    // may not need some of these fields
+    name: '',
+    blog_type: '🎮 The New Pokémon GO: Pokémon TCG Pocket',
+    description: 'Pokemon TCG Pocket could be as popular as Pokemon GO.',
+    image: gamejournal_ptcgpImg,
+    date: 'Fall 2024',
+    source_code_link: '',
+    demo_link: '',
+    media_link: '',
+    game_journal_link: 'https://drive.google.com/file/d/1XdiLdyhwd7RL4bXczd8nPKyKZcCvNVhi/view?usp=share_link',
+  },
   // {
   //   // may not need some of these fields
   //   name: '',
@@ -396,6 +422,17 @@ const blog = [
   //   demo_link: '',
   //   media_link: '',
   // },
+  {
+    name: '💭 MORE BLOGS LISTED SOON!',
+    description: '',
+    image: placeholderImg,
+    stack: '',
+    source_code_link: '',
+    demo_link: '',
+    demo_video: '',
+    media_link: '',
+    digital_prototype: '',
+  },
 ];
 
 const memoji = {
@@ -546,5 +583,5 @@ export {
   icons,
   awards,
   research,
-  // blog,
+  blog,
 };
