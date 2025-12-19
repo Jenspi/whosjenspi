@@ -200,7 +200,7 @@ const projects = [
   },
   {
     name: '🧮 Sorts',
-    description: '',// TODO: in progress
+    description: 'Sort items in this low-poly Unity 3D game inspired by games like A Little To The Left. ⋆˙⟡ ⋆🫑.˚ ⊹₊⟡ 🍅⋆',// TODO: in progress
     image: placeholderImg,// TODO: in progress
     stack: 'Unity 3D, C#',
     source_code_link: '',// TODO: in progress; do I want this public?
@@ -209,7 +209,7 @@ const projects = [
     digital_prototype: '',// TODO: do I have one?
   },
   {
-    name: '🕳️ MORE PROJECTS LISTED SOON!',
+    name: '🕳️ MORE PROJECTS UPLOADED SOON!',
     description: '',
     image: placeholderImg,
     stack: '',
@@ -377,31 +377,22 @@ const blog = [
     game_journal: '',
   },*/
   {
-    // may not need some of these fields
-    name: '',
-    blog_type: '🎮 The Downfall of Overwatch: Overwatch 2',
+    name: '🪦 The Downfall of Overwatch: Overwatch 2',
+    blog_type: 'Game Journal',
     description: 'The downfall of the Overwatch franchise.',
     image: gamejournal_ow2Img,
     date: 'Fall 2024',
-    source_code_link: '',
-    demo_link: '',
-    media_link: '',
     game_journal_link: 'https://drive.google.com/file/d/122coP7sfmYEJx7e0Sy3E4XWMwBMokfkL/view?usp=share_link',
   },
   {
-    // may not need some of these fields
-    name: '',
-    blog_type: '🎮 The New Pokémon GO: Pokémon TCG Pocket',
+    name: '⚡️ The New Pokémon GO: Pokémon TCG Pocket',
+    blog_type: 'Game Journal',
     description: 'Pokemon TCG Pocket could be as popular as Pokemon GO.',
     image: gamejournal_ptcgpImg,
     date: 'Fall 2024',
-    source_code_link: '',
-    demo_link: '',
-    media_link: '',
     game_journal_link: 'https://drive.google.com/file/d/1XdiLdyhwd7RL4bXczd8nPKyKZcCvNVhi/view?usp=share_link',
   },
   // {
-  //   // may not need some of these fields
   //   name: '',
   //   blog_type: '🥽 VR/AR History & Future Presentation',
   //   description: 'Presentation given on the history and future of VR/AR technology.',
@@ -412,7 +403,6 @@ const blog = [
   //   media_link: '',
   // },
   // {
-  //   // may not need some of these fields
   //   name: '',
   //   blog_type: '📄 Documentation Workshop',
   //   description: 'Hosted a workshop on best practices for software documentation.',
@@ -423,7 +413,7 @@ const blog = [
   //   media_link: '',
   // },
   {
-    name: '💭 MORE BLOGS LISTED SOON!',
+    name: '💭 MORE BLOGS UPLOADED SOON!',
     description: '',
     image: placeholderImg,
     stack: '',
