@@ -115,6 +115,7 @@ const ProjectCard = ({
   game_journal_link,
   demo_video,
   digital_prototype,
+  blog_type,
   
 }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
@@ -155,6 +156,7 @@ const ProjectCard = ({
               <div className="mt-3 flex-grow">
                   <h3 className="text-white font-bold text-2xl">{name}</h3>
 				  {/* Allow for "read more" button if line exceeds 25 words (defined by src/Components/ReadMore.jsx) */}
+                  <h4 className="text-white font-bold italic text-1xl">{blog_type}</h4>
 				  <div className="mt-2 text-secondary text-[14px] leading-snug">
 						<ReadMore id="read-more-text" text={description} />
 					</div>
