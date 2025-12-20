@@ -4,16 +4,15 @@
    FileName: ContactForm.jsx
    Version: I
    Creation: 02/06/2023
-   Last modification: 11/24/2025 (Jenny Spicer)
+   Last modification: 12/19/2025 (Jenny Spicer)
 */
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [isSent, setIsSent] = useState(false);
-  const form = useRef();
   
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,7 +20,7 @@ const ContactForm = () => {
     emailjs.sendForm(
       "whoisJenny",
       "template_r4oad76",
-      form.current,
+      e.target,
       "dvA-xQrDnUDtFzJ0g"
     )
       .then(
@@ -59,7 +58,6 @@ const ContactForm = () => {
       <div className="w-full flex justify-center">
         <form
           id="contact_form"
-          ref={form}
           method="POST"
           target="_blank"
           onSubmit={sendEmail}
