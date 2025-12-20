@@ -4,7 +4,7 @@
    FileName: constants.js
    Version: II
    Creation: 02/06/2023
-   Last modification: 12/17/2025 (Jenny Spicer)
+   Last modification: 12/19/2025 (Jenny Spicer)
 */
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -58,8 +58,9 @@ import {
   gamejournal_ow2Img,
   gamejournal_ptcgpImg,
   sortsImg,
+  vrarhistoryImg,
+  ethicsOfAIInAutonomousVehiclesImg,
   // documentationWorkshopImg,
-  // vrarhistoryImg,
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -99,8 +100,9 @@ const media = {
   gamejournal_ow2Img,
   gamejournal_ptcgpImg,
   sortsImg,
+  vrarhistoryImg,
+  ethicsOfAIInAutonomousVehiclesImg,
   // documentationWorkshopImg,
-  // vrarhistoryImg,
 };
 
 const icons = {
@@ -373,10 +375,9 @@ const blog = [
     description: '',
     image: placeholderImg,
     date: '',
-    source_code_link: '',
-    demo_link: '',
-    media_link: '',
-    game_journal: '',
+    game_journal_link: '',
+    powerpoint: '',
+    written_paper_link: '',
   },*/
   {
     name: '🪦 The Downfall of Overwatch: Overwatch 2',
@@ -394,36 +395,41 @@ const blog = [
     date: 'Fall 2024',
     game_journal_link: 'https://drive.google.com/file/d/1XdiLdyhwd7RL4bXczd8nPKyKZcCvNVhi/view?usp=share_link',
   },
+  {
+    name: '🥽 Virtual Reality History & Future',
+    blog_type: 'Written Research Paper & Presentation',
+    description: 'Presentation given on the history and future of VR/AR technology.',// TODO: better description in progress
+    image: vrarhistoryImg,
+    date: 'Spring 2024',
+    written_paper_link: 'https://drive.google.com/file/d/1DMp8mjx9uvEpLNaPovzh7p2T8qAcjbRv/view?usp=sharing',
+    powerpoint: 'https://docs.google.com/presentation/d/1HHdryvdChw4FFh5ufD_lJDx8PqhudxOq/edit?usp=sharing&ouid=105458545067617748865&rtpof=true&sd=true',
+  },
+  {
+    name: '🚙 The Ethical Implications of AI in Autonomous Vehicles',
+    blog_type: 'Written Research Paper',
+    description: 'Presentation given on the ethical implications of AI in autonomous vehicles.',// TODO: better description in progress
+    image: ethicsOfAIInAutonomousVehiclesImg,
+    date: 'Fall 2023',
+    written_paper_link: 'https://drive.google.com/file/d/1RafvEHe4JItdp5U4x8b4gZHYJmU1bQWe/view?usp=sharing',
+  },
   // {
-  //   name: '',
-  //   blog_type: '🥽 VR/AR History & Future Presentation',
-  //   description: 'Presentation given on the history and future of VR/AR technology.',
-  //   image: vrarhistoryImg,
-  //   date: '',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
-  // },
-  // {
-  //   name: '',
-  //   blog_type: '📄 Documentation Workshop',
+  //   name: '📄 Documentation Workshop',
+  //   blog_type: 'Workshop Presentation',
   //   description: 'Hosted a workshop on best practices for software documentation.',
   //   image: documentationWorkshopImg,
-  //   date: '',
-  //   source_code_link: '',
-  //   demo_link: '',
-  //   media_link: '',
+  //   date: 'Fall 2024',
+  //   powerpoint: '',
+  //   written_paper_link: '',
   // },
   {
     name: '💭 MORE BLOGS UPLOADED SOON!',
+    name: '<emoji> ',
     description: '',
     image: placeholderImg,
-    stack: '',
-    source_code_link: '',
-    demo_link: '',
-    demo_video: '',
-    media_link: '',
-    digital_prototype: '',
+    date: '',
+    game_journal_link: '',
+    powerpoint: '',
+    written_paper_link: '',
   },
 ];
 
