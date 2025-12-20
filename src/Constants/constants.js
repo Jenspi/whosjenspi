@@ -57,6 +57,7 @@ import {
   ecommercedbImg,
   gamejournal_ow2Img,
   gamejournal_ptcgpImg,
+  sortsImg,
   // documentationWorkshopImg,
   // vrarhistoryImg,
 } from '../assets';
@@ -97,6 +98,7 @@ const media = {
   ecommercedbImg,
   gamejournal_ow2Img,
   gamejournal_ptcgpImg,
+  sortsImg,
   // documentationWorkshopImg,
   // vrarhistoryImg,
 };
@@ -200,13 +202,13 @@ const projects = [
   },
   {
     name: '🧮 Sorts',
-    description: 'Sort items in this low-poly Unity 3D game inspired by games like A Little To The Left. ⋆˙⟡ ⋆🫑.˚ ⊹₊⟡ 🍅⋆',// TODO: in progress
-    image: placeholderImg,// TODO: in progress
+    description: 'Sort items in this low-poly Unity 3D game inspired by games like A Little To The Left. ⋆˙⟡ ⋆🫑.˚ ⊹₊⟡ 🍅⋆',
+    image: sortsImg,
     stack: 'Unity 3D, C#',
-    source_code_link: '',// TODO: in progress; do I want this public?
-    demo_link: '',// TODO: in progress
+    source_code_link: 'https://github.com/Jenspi/Sorts',
+    demo_link: 'https://github.com/Jenspi/Sorts/releases',
     demo_video: '',// TODO: in progress
-    digital_prototype: '',// TODO: do I have one?
+    // devlog: 'https://jenspi.itch.io/sorts/devlog/1153623/-sorts-v100-release',
   },
   {
     name: '🕳️ MORE PROJECTS UPLOADED SOON!',
