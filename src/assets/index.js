@@ -41,6 +41,7 @@ import cppIcon from './tech/cpp.png';
 import tcpchatImg from './projects/tcpchat.png';
 import breatheImg from './projects/breathe.png';
 import ecommercedbImg from './projects/ecommercedb.gif';
+import sortsImg from './projects/sorts.gif';
 
 // Research
 import research_camochameleonImg from './research/research_camochameleon.png';
@@ -100,6 +101,7 @@ export {
   ecommercedbImg,
   gamejournal_ow2Img,
   gamejournal_ptcgpImg,
+  sortsImg,
   // documentationWorkshopImg,
   // vrarhistoryImg,
 };
