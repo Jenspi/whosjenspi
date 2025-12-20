@@ -4,7 +4,7 @@
    FileName: BlogCards.jsx (ProjectCards.jsx copy)
    Version: I
    Creation: 02/06/2023
-   Last modification: 12/17/2025 (Jenny Spicer)
+   Last modification: 12/19/2025 (Jenny Spicer)
 */
 
 import { motion } from "framer-motion";
@@ -109,16 +109,14 @@ const ProjectCard = ({
   description,
   image,
   date,
-  source_code_link,
-  demo_link,
+//   source_code_link,
   media_link,
   game_journal_link,
-  demo_video,
-  digital_prototype,
   blog_type,
-  
+  powerpoint,
+  written_paper_link,
 }) => {
-	const [isExpanded, setIsExpanded] = useState(false);
+	// const [isExpanded, setIsExpanded] = useState(false);
   return (
       <Tilt
           options={{
@@ -140,7 +138,7 @@ const ProjectCard = ({
                       className="w-full h-full md:h-[200px] object-cover rounded-lg relative"
                   />
                   <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                      {source_code_link && <div
+                      {/* {source_code_link && <div
                           onClick={() => window.open(source_code_link, "_blank")}
                           className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
                       >
@@ -149,7 +147,7 @@ const ProjectCard = ({
                               alt="github"
                               className="w-full h-full object-contain"
                           />
-                      </div>}
+                      </div>} */}
                   </div>
               </div>
 				{/* Content Section */}
@@ -174,26 +172,6 @@ const ProjectCard = ({
 						Game Journal
 					</a>
 					</div>}
-					{digital_prototype && <div className="mt-0 flex">
-						<a
-						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
-						href={digital_prototype}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Prototype
-					</a>
-					</div>}
-					{demo_video && <div className="mt-0 flex">
-						<a
-						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
-						href={demo_video}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Video
-					</a>
-					</div>}
 					{media_link && <div className="mt-0 flex">
 						<a
 						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
@@ -202,6 +180,26 @@ const ProjectCard = ({
 						rel="noopener noreferrer"
 					>
 						Project in Media
+					</a>
+					</div>}
+					{powerpoint && <div className="mt-0 flex">
+						<a
+						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+						href={powerpoint}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						PowerPoint
+					</a>
+					</div>}
+					{written_paper_link && <div className="mt-0 flex">
+						<a
+						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+						href={written_paper_link}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Written Paper
 					</a>
 					</div>}
               </div>
