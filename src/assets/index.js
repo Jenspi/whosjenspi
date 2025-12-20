@@ -4,7 +4,7 @@
    FileName: index.js
    Version: III
    Creation: 02/06/2023
-   Last modification: 12/09/2025 (Jenny Spicer)
+   Last modification: 12/19/2025 (Jenny Spicer)
 */
 
 // Logo
@@ -59,7 +59,8 @@ import startupunoImg from './awards/startupuno.png';
 import gamejournal_ow2Img from './blog/gamejournal_ow2.png';
 import gamejournal_ptcgpImg from './blog/gamejournal_ptcgp.png';
 // import documentationWorkshopImg from './blog/documentationWorkshop.png';
-// import vrarhistoryImg from './blog/vrarhistory.png';
+import vrarhistoryImg from './blog/vrarhistory.png';
+import ethicsOfAIInAutonomousVehiclesImg from './blog/ethicsOfAIInAutonomousVehicles.png';
 
 // Avatar
 import avatar from './avatar/avatar.png';
@@ -102,6 +103,7 @@ export {
   gamejournal_ow2Img,
   gamejournal_ptcgpImg,
   sortsImg,
+  vrarhistoryImg,
+  ethicsOfAIInAutonomousVehiclesImg,
   // documentationWorkshopImg,
-  // vrarhistoryImg,
 };
