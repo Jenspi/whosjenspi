@@ -114,6 +114,7 @@ const ProjectCard = ({
   demo_video,
   media_link,
   digital_prototype,
+  devlog,
 }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
   return (
@@ -174,7 +175,17 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{/* Interactive Demo */}Demo
+						Demo
+					</a>
+					</div>}
+					{devlog && <div className="mt-0 flex">
+						<a
+						className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
+						href={devlog}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Devlogs
 					</a>
 					</div>}
 					{digital_prototype && <div className="mt-0 flex">
@@ -184,7 +195,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{/* Digital Prototype */}Prototype
+						Prototype
 					</a>
 					</div>}
 					{demo_video && <div className="mt-0 flex">
@@ -194,7 +205,7 @@ const ProjectCard = ({
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{/* Demo Video */}Video
+						Video
 					</a>
 					</div>}
 					{media_link && <div className="mt-0 flex">
