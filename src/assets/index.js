@@ -42,6 +42,8 @@ import tcpchatImg from './projects/tcpchat.png';
 import breatheImg from './projects/breathe.png';
 import ecommercedbImg from './projects/ecommercedb.gif';
 import sortsImg from './projects/sorts.gif';
+import armImg from './projects/arm.gif';
+import armBackupImg from './projects/arm.png';
 
 // Research
 import research_camochameleonImg from './research/research_camochameleon.png';
@@ -105,5 +107,7 @@ export {
   sortsImg,
   vrarhistoryImg,
   ethicsOfAIInAutonomousVehiclesImg,
+  armImg,
+  armBackupImg,
   // documentationWorkshopImg,
 };
