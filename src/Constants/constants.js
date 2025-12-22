@@ -4,7 +4,7 @@
    FileName: constants.js
    Version: II
    Creation: 02/06/2023
-   Last modification: 12/19/2025 (Jenny Spicer)
+   Last modification: 12/22/2025 (Jenny Spicer)
 */
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -60,6 +60,8 @@ import {
   sortsImg,
   vrarhistoryImg,
   ethicsOfAIInAutonomousVehiclesImg,
+  armImg,
+  armBackupImg,
   // documentationWorkshopImg,
 } from '../assets';
 
@@ -102,6 +104,8 @@ const media = {
   sortsImg,
   vrarhistoryImg,
   ethicsOfAIInAutonomousVehiclesImg,
+  armImg,
+  armBackupImg,
   // documentationWorkshopImg,
 };
 
@@ -172,6 +176,7 @@ const projects = [
     demo_video: '',
     media_link: '',
     digital_prototype: '',
+    devlog: '',
   },*/
   {
     name: '🫁 BREATHE',
@@ -192,6 +197,7 @@ const projects = [
     source_code_link: 'https://github.com/Jenspi/TCPChat',
     demo_link: 'https://github.com/Jenspi/TCPChat/releases',
     demo_video: '',// TODO: demo in progress
+    devlog: 'https://github.com/Jenspi/TCPChat/releases',
   },
   {
     name: '🛍️ E-Commerce DBMS',
@@ -201,6 +207,7 @@ const projects = [
     source_code_link: 'https://github.com/Jenspi/databases',
     demo_link: 'https://github.com/Jenspi/databases?tab=readme-ov-file#-run-this-project-no-installation-required',
     demo_video: '',// TODO: do I want to do this?
+    devlog: 'https://github.com/Jenspi/databases/releases',
   },
   {
     name: '🧮 Sorts',
@@ -210,10 +217,20 @@ const projects = [
     source_code_link: 'https://github.com/Jenspi/Sorts',
     demo_link: 'https://github.com/Jenspi/Sorts/releases',
     demo_video: '',// TODO: in progress
-    // devlog: 'https://jenspi.itch.io/sorts/devlog/1153623/-sorts-v100-release',
+    devlog: 'https://github.com/Jenspi/Sorts/releases',
   },
   {
-    name: '🕳️ MORE PROJECTS UPLOADED SOON!',
+    name: '🦾 Arm',
+    description: 'You\'re an assistant to a supervillain who\'s instructing you to build something. Something feels bad about this... .𖥔 ݁ ˖ ϟ ˖ ݁ 𖥔.',
+    image: armImg,
+    stack: 'Game Maker Studio 2, GML',
+    source_code_link: 'https://github.com/Jenspi/Arm',
+    demo_link: 'https://igda-uno.itch.io/arm',
+    demo_video: 'https://www.youtube.com/watch?v=qBDYcIJZZfw',
+    devlog: 'https://github.com/Jenspi/Arm/releases',
+  },
+  {
+    name: '🕳️ MORE PROJECTS UPLOADED OFTEN!',
     description: '',
     image: placeholderImg,
     stack: '',
@@ -222,6 +239,7 @@ const projects = [
     demo_video: '',
     media_link: '',
     digital_prototype: '',
+    devlog: '',
   },
 ];
 
@@ -422,8 +440,7 @@ const blog = [
   //   written_paper_link: '',
   // },
   {
-    name: '💭 MORE BLOGS UPLOADED SOON!',
-    name: '<emoji> ',
+    name: '💭 MORE BLOGS UPLOADED OFTEN!',
     description: '',
     image: placeholderImg,
     date: '',
